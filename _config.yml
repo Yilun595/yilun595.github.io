@@ -10,7 +10,7 @@ locale                   : "Hong Kong"
 title                    : "Yilun's Site"
 title_separator          : "-"
 name                     : &name "Yilun Li"
-description              : &description "PhD Student"
+description              : &description "PhD Student @HKU"
 url                      : https://yilun595.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Yilun595/yilun595.github.io"
@@ -99,14 +99,14 @@ author:
   github           : "Yilun595"
   google_plus      :
   keybase          :
-  instagram        :
-  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
+  instagram        : "https://www.instagram.com/yilunerrr/"
+  impactstory      :
   lastfm           :
   linkedin         :
   orcid            : "https://orcid.org/0000-0001-7896-3374"
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    :
   steam            :
   tumblr           :
   twitter          : 

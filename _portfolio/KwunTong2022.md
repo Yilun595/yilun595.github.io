@@ -3,7 +3,6 @@ title: "Senses Hill + Valley: Renovation of Kwun Tong Sensory Garden"
 excerpt: "Submission to [Design Competition for Transformation of Sensory Garden at Kwun Tong Promenade](https://www.hkia.net/en/whats-on.html?id=8221) held by HKIA <br/><img src='823341-Perspective0.jpg'>"
 collection: portfolio
 ---
-
 This submitted project features a design concept of "Sensory Hills and Valleys: Urbanized Natural Experience Scheme". On the basis of site conditions and historical context, three distinctive coherent spaces, "Hill of Cloud ", "Hill of Wind " and " Valley of Mist", are created. This plan provides 7/24 multi-functional spaces for Kwun Tong community residents.
 
 Different from the original concept of triggering the five senses of human by using plants, this concept plan extracts three elements in nature which are closely related to human perception, namely "cloud", "wind" and "fog", and exhibits nature experience in a highly urbanized costal context through the means of abstraction and space creation. The human sensory is integrated with different landscape elements, so as to the renovation of the Kwun Tong Sensory Garden.

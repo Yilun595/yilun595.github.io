@@ -2,7 +2,7 @@
 title: "Landscape metrics in assessing how the configuration of urban green spaces affects their cooling effect: A systematic review of empirical studies"
 collection: publications
 permalink: /publication/LANDUP2023
-excerpt: 'Landscape metrics / Urban green space / Cooling effect / Systematic review'
+excerpt: 'Landscape metrics / Urban green space / Cooling effect / Systematic review <br/><img src='LANDUP2023.jpg'>'
 date: 2023-11-15
 venue: 'Landscape and Urban Planning'
 paperurl: 'https://doi.org/10.1016/j.landurbplan.2023.104842'
