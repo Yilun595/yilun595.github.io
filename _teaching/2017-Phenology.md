@@ -7,7 +7,6 @@ venue: "Beijing Forestry University"
 date: 2017-06-15
 location: "Beijing, China"
 ---
-
 Phenological changes of 
 
 Heading 1

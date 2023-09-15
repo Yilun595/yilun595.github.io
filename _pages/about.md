@@ -15,11 +15,10 @@ My current research evaluates the association between `urban greenery configurat
 
 Education
 ======
-* B.Agr. in Landscape Gardening, Beijing Forestry University, 2017
-* M.Agr. in Ornamental Plants and Horticulture, Beijing Forestry University, 2020
-* Ph.D. in Landscape Architecture, The University of Hong Kong, 2025 (expected)
+* B.Agr. in Landscape Gardening, `Beijing Forestry University`, 2013-2017
+* M.Agr. in Ornamental Plants and Horticulture, `Beijing Forestry University`, 2017-2020
+* Ph.D. in Landscape Architecture, `The University of Hong Kong`, 2021-2025 (expected)
 
 Work experience
 ======
-* AECOM, Beijing (2020-2021)
-  * Assistant Landscape Designer
+* Assistant Landscape Designer in `AECOM`, Beijing (2020-2021)

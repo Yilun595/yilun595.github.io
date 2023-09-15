@@ -16,7 +16,7 @@ Graphical Abstract
 
 ![Fig](/images/LANDUP2023-2.jpg)
 
-Fig. Mean and standard deviation of Pearson correlation coefficients in reviewed papers between class-level configurational LMs and mean LST. (Note: All plotted studies have used mean daytime LST as dependent variables, and have considered UGS as a type of land cover extracted from remote sensing images. n at the bottom right refers to the number of city cases included. See Appendix D for origins of the extracted data.).
+Mean and standard deviation of Pearson correlation coefficients in reviewed papers between class-level configurational LMs and mean LST. (Note: All plotted studies have used mean daytime LST as dependent variables, and have considered UGS as a type of land cover extracted from remote sensing images. n at the bottom right refers to the number of city cases included. See Appendix D for origins of the extracted data.).
 
 [Download Article](http://yilun595.github.io/files/LANDUP2023.pdf)
 
