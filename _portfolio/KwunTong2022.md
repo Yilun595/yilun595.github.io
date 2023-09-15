@@ -1,5 +1,6 @@
 ---
 title: "Senses Hill + Valley: Renovation of Kwun Tong Sensory Garden"
+permalink: /portfolio/KwunTong2022
 excerpt: "Submission to [Design Competition for Transformation of Sensory Garden at Kwun Tong Promenade](https://www.hkia.net/en/whats-on.html?id=8221) held by HKIA"
 collection: portfolio
 ---
