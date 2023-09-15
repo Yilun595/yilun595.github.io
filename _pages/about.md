@@ -21,4 +21,4 @@ Education
 
 Work experience
 ======
-* Assistant Landscape Designer in `AECOM`, Beijing (2020-2021)
+* Assistant Landscape Designer, `AECOM, Beijing`, 2020-2021

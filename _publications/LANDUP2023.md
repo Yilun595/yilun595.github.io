@@ -2,7 +2,7 @@
 title: "Landscape metrics in assessing how the configuration of urban green spaces affects their cooling effect: A systematic review of empirical studies"
 collection: publications
 permalink: /publication/LANDUP2023
-excerpt: '[KEY WORDS] Urban heat mitigation / Evidence-based design / Urban vegetation / Urban park / Landscape pattern'
+excerpt: '<b>[KEY WORDS]</b> Urban heat mitigation / Evidence-based design / Urban vegetation / Urban park / Landscape pattern'
 date: 2023-11-15
 venue: 'Landscape and Urban Planning'
 paperurl: 'https://doi.org/10.1016/j.landurbplan.2023.104842'
