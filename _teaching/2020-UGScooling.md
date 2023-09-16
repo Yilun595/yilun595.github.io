@@ -21,20 +21,31 @@ This research project has evaluated UGS's atmospheric cooling from micro to neig
 Microclimate in urban parks and its influencing factors
 ----
 
-At microscale, 
+At micro scale, the microclimate conditions within urban parks were evaluated, as well as their relationship between the park composition. In particular, two urban parks have been selected as study cases, i.e., Zizhuyuan Park and Tiantan Park (The Temple of Heaven). The former was selected as it's composed of typical landscape elements, while the latter was selected as it does not contain water bodies, which has a great effect on thermal environment, so that the vegetation's effect can be investigated.
 
-Refer to one [published article](/publications/UECO2021) derived from this section for more detail.
+![Abstract](/images/UECO2021.jpg)
+
+Location of sampling points within Tiantan Park (The Temple of Heaven)
+
+Refer to one [published article](/publication/UECO2021) derived from this section for more detail.
 
 Parks' cooling effects on their adjacent areas
 ----
 
-Refer to one [published article](/publications/UFUG2021.md) derived from this section for more detail.
+Going beyond within urban parks, this section evaluated the cooling benefits of large urban parks to their adjacent neighborhoods during summer and its influencing factors. Measurements conducted along transects reveals that high cooling efficiency exists within ~one park width.
 
+![Abstract](/images/UFUG2021.jpg)
+
+Locations of study sites and sampling points
+
+Refer to one [published article](/publication/UFUG2021) derived from this section for more detail.
 
 Green and blue infrastructure and its cooling effect
 ----
 
+Besides urban parks, different types of green elements, e.g., street trees, pocket gardens, affiliated green spaces, etc., altogether constitute green infrastructure systems and provide considerable ecosystem services. This section has focused on a special transect in Beijing, i.e., The Second Ring Road, which is a circular route at the very core area of Beijing surrounded by different urban elements.
 
+Refer to one [published article](/publication/UFUG2023) derived from this section for more detail.
 
 Funding information
 ----
