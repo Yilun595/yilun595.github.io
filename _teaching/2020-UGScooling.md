@@ -3,14 +3,12 @@ title: "Urban green spaces' atmospheric cooling in Beijing, China"
 collection: teaching
 type: "Master's thesis"
 excerpt: "By taking urban parks in Beijing as study cases, this research project evaluated the regulating effects of urban green spaces on micro to neighborhood scale cooling."
-permalink: /teaching/2017-Phenology
+permalink: /teaching/2020-UGScooling
 venue: "Beijing Forestry University"
 date: 2020-06-15
 location: "Beijing, China"
 ---
 Urban heat island has long been documented, as well as the significant cooling effects of urban green spaces (UGS). Yet evidence on UGS's atmospheric cooling remained insufficient, especially incorporating a cross-scale perspective. By taking urban parks in Beijing as study cases, this research project evaluated the regulating effects of urban green spaces on micro to neighborhood scale cooling. The atmospheric cooling intensity of urban parks and their components were examined, as well as their influencing factors. Results are expected to guide future evidence-based planning and design of urban parks in Beijing, as well as future renewal of these urban parks located at the core area of Beijing, China.
-
-
 
 ![Fig](/images/2020UGS.jpg)
 
