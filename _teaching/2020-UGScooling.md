@@ -45,6 +45,10 @@ Green and blue infrastructure and its cooling effect
 
 Besides urban parks, different types of green elements, e.g., street trees, pocket gardens, affiliated green spaces, etc., altogether constitute green infrastructure systems and provide considerable ecosystem services. This section has focused on a special transect in Beijing, i.e., The Second Ring Road, which is a circular route at the very core area of Beijing surrounded by different urban elements.
 
+![Abstract](/images/UECO2023.png)
+
+Study site and locations of sampling points with land-cover classification results in summer
+
 Refer to one [published article](/publication/UFUG2023) derived from this section for more detail.
 
 Funding information
