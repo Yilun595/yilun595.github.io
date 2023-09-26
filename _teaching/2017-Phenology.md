@@ -35,18 +35,20 @@ The above chart illustrates the cumulative frequencies of species and cultivars 
 
 The above chart illustrates the cumulative frequencies of species and cultivars during blossoms (BBCH 60-69), and full blossom (BBCH 65). Plants generally demonstrate the best ornamental value during blossom period.
 
-
-
 ![Fig](/images/Phenology3.jpg)
 
 A phenology map of observed species. Different colors refer to different phenological stages. It clearly shows the sequences of landscape plants' key ornamental states, which is useful information for selection of plant species in planting design. The illustrated results are based on observations made in 2016 growing season.
 
-
-
-Seasonality observation of plant community
+Seasonality observation of plant community and human perception
 ----
 
+In practice, plants are rarely planted individually. Rather, they form plant communities that demonstrate seasonality across different seasons. This section evaluates the perceptions of seasonality of landscape and how the plant characteristics may influence such human perception.
 
+35 scenes from large urban parks in Beijing were recorded across 4 seasons. By-slide Scenic beauty estimation (SBE) 
+
+
+
+Refer to this [conference paper (in Chinese)](https://kns.cnki.net/kcms/detail/detail.aspx?filename=ZGFV201810001093&dbcode=CPFD&dbname=CPFD2019&v=5JqWBzmqlGYADA7k6B-uYtsgZCyV1JCcIKnIA5cEPvRzdyZiyHsQ6dYBFfbRV_MOCM9lcUOZp34=) for further information.
 
 Funding information
 ----
