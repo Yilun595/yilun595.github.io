@@ -10,6 +10,9 @@ location: "Beijing, China"
 ---
 Phenological changes of vegetation bring diversity to the urban landscape, especially in temperate regions. By taking Beijing as a study case, this research project evaluated the phenological changes of landscape plants at both individual and plant community level. Results obtained were expected to aid selection of plant species in planting design.
 
+**NOTE:** Contents to be updated.
+{: .notice}
+
 Phenology observation of commonly used woody species
 ----
 Phenology observations of 80+ widely-used woody plants were conducted during growing season in 2016 (March-November). BBCH scale was applied to record the phenological stages. On the campus of BFU, a variety of plant species exist, making it a good phenology garden for phenological observations. During spring and autumn, the observations were made at an interval of 3-5 days. While in summer, longer interval of 7-9 days was adopted due to fewer phenological changes.
