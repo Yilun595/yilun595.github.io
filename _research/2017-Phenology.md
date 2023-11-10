@@ -3,7 +3,7 @@ title: "Phenological changes of landscape plants in Beijing, China"
 collection: teaching
 type: "Undergraduate thesis"
 excerpt: "By taking Beijing as a study case, this research project evaluated the phenological changes of landscape plants at both individual and plant community level."
-permalink: /teaching/2017-Phenology
+permalink: /research/2017-Phenology
 venue: "Beijing Forestry University"
 date: 2017-06-15
 location: "Beijing, China"

@@ -3,7 +3,7 @@ title: "Urban green spaces' atmospheric cooling in Beijing, China"
 collection: teaching
 type: "Master's thesis"
 excerpt: "By taking urban parks in Beijing as study cases, this research project evaluated the regulating effects of urban green spaces on micro to neighborhood scale cooling."
-permalink: /teaching/2020-UGScooling
+permalink: /research/2020-UGScooling
 venue: "Beijing Forestry University"
 date: 2020-06-15
 location: "Beijing, China"
@@ -47,7 +47,7 @@ Besides urban parks, different types of green elements, e.g., street trees, pock
 
 Study site and locations of sampling points with land-cover classification results in summer
 
-Refer to one [published article](/publication/UFUG2023) derived from this section for more detail.
+Refer to one [published article](/publication/UECO2023) derived from this section for more detail.
 
 Funding information
 ----
