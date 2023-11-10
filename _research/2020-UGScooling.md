@@ -1,6 +1,6 @@
 ---
 title: "Urban green spaces' atmospheric cooling in Beijing, China"
-collection: teaching
+collection: research
 type: "Master's thesis"
 excerpt: "By taking urban parks in Beijing as study cases, this research project evaluated the regulating effects of urban green spaces on micro to neighborhood scale cooling."
 permalink: /research/2020-UGScooling
