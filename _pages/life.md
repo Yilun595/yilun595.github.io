@@ -32,6 +32,4 @@ And I collect some plant specimens along the route.
 Guitar on the side
 ----
 
-I play a little guitar on the side. Check out one of my covers.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7E9Abah3mgQ?si=7xePQrfVejTxl4_T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe src="//player.bilibili.com/player.html?aid=594319669&bvid=BV1Cq4y1x7bz&cid=516951734&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
