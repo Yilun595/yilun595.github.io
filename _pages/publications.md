@@ -10,6 +10,8 @@ Urban microclimate, outdoor thermal comfort, and urban greenery
 
 This collection of studies includes research articles focusing on the interactions between urban greenery and urban microclimate. They are developed from my Master's theis (Beijing-based) and my ongoing PhD study (Hong Kong-based).
 
+Li, Y., Li, Z., & Ren, C.* (2023). [Diversity of summertime thermal and environmental perceptions in residential public spaces: A walking-based assessment in Hong Kong’s Public Housing Estates](/publication/BAE2025). <i>Building and Environment</i>. Accepted. 
+
 Li, Y., Ouyang, W., Yin, S., Tan, Z., & Ren, C.* (2023). [Microclimate and its influencing factors in residential public spaces during heat waves: An empirical study in Hong Kong](/publication/BAE2023). <i>Building and Environment</i>, 110225. https://doi.org/10.1016/j.buildenv.2023.110225
 
 Li, Y., Fan, S., Li, K., Zhang, Y., Kong, L., Xie, Y., & Dong, L.* (2021). [Large urban parks summertime cool and wet island intensity and its influencing factors in Beijing, China](/publication/UFUG2021). <i>Urban Forestry & Urban Greening</i>, 65, 127375. https://doi.org/10.1016/j.ufug.2021.127375
