@@ -10,7 +10,7 @@ Urban microclimate, outdoor thermal comfort, and urban greenery
 
 This collection of studies includes research articles focusing on the interactions between urban greenery and urban microclimate. They are developed from my Master's theis (Beijing-based) and my ongoing PhD study (Hong Kong-based).
 
-Li, Y., Li, Z., & Ren, C.* (2025). [Diversity of summertime thermal and environmental perceptions in residential public spaces: A walking-based assessment in Hong Kong’s Public Housing Estates](/publication/BAE2025). <i>Building and Environment</i>， 112594. https://doi.org/10.1016/j.buildenv.2025.112594 
+Li, Y., Li, Z., & Ren, C.* (2025). [Diversity of summertime thermal and environmental perceptions in residential public spaces: A walking-based assessment in Hong Kong’s Public Housing Estates](/publication/BAE2025). <i>Building and Environment</i>, 112594. https://doi.org/10.1016/j.buildenv.2025.112594 
 
 Li, Y., Ouyang, W., Yin, S., Tan, Z., & Ren, C.* (2023). [Microclimate and its influencing factors in residential public spaces during heat waves: An empirical study in Hong Kong](/publication/BAE2023). <i>Building and Environment</i>, 110225. https://doi.org/10.1016/j.buildenv.2023.110225
 
