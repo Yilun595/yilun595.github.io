@@ -23,9 +23,13 @@ author_profile: true
 
 .album-slide {
     min-width: 100%;
-    display: flex;
+    display: none;
     justify-content: flex-start; 
     align-items: center;
+}
+
+.album-slide.active {
+    display: flex;
 }
 
 .album-slide img {
@@ -107,7 +111,7 @@ author_profile: true
 <div class="album-container">
     <button class="scroll-btn left" id="prevBtn">←</button>
     <div class="album-carousel" id="imageCarousel">
-        <div class="album-slide">
+        <div class="album-slide active">
             <img src="/images/Life/20231112.jpg" alt="Po Pin Chau"/>
         </div>
         <div class="album-slide">
@@ -125,78 +129,61 @@ author_profile: true
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    let currentSlide = 0;
-    const carousel = document.getElementById('imageCarousel');
-    const slides = carousel.getElementsByClassName('album-slide');
-    const totalSlides = slides.length;
+window.addEventListener('load', function() {
+    const slides = document.getElementsByClassName('album-slide');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
+    const dotsContainer = document.getElementById('dotsContainer');
+    let currentIndex = 0;
 
     // Create dots
-    const dotsContainer = document.getElementById('dotsContainer');
-    for (let i = 0; i < totalSlides; i++) {
+    for (let i = 0; i < slides.length; i++) {
         const dot = document.createElement('div');
         dot.className = `dot ${i === 0 ? 'active' : ''}`;
-        dot.addEventListener('click', () => goToSlide(i));
+        dot.setAttribute('data-index', i);
         dotsContainer.appendChild(dot);
     }
 
-    function updateDots() {
-        const dots = document.getElementsByClassName('dot');
-        Array.from(dots).forEach((dot, i) => {
-            dot.className = `dot ${i === currentSlide ? 'active' : ''}`;
-        });
-    }
-
-    function updateButtons() {
-        prevBtn.style.display = currentSlide <= 0 ? 'none' : 'flex';
-        nextBtn.style.display = currentSlide >= totalSlides - 1 ? 'none' : 'flex';
-    }
-
-    function goToSlide(index) {
-        currentSlide = index;
-        carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
-        updateDots();
-        updateButtons();
-    }
-
-    function changeSlide(direction) {
-        const newIndex = currentSlide + direction;
-        if (newIndex >= 0 && newIndex < totalSlides) {
-            goToSlide(newIndex);
+    function showSlide(index) {
+        // Hide all slides
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].classList.remove('active');
+            dotsContainer.children[i].classList.remove('active');
         }
+        
+        // Show selected slide
+        slides[index].classList.add('active');
+        dotsContainer.children[index].classList.add('active');
+        
+        // Update button visibility
+        prevBtn.style.display = index === 0 ? 'none' : 'flex';
+        nextBtn.style.display = index === slides.length - 1 ? 'none' : 'flex';
     }
 
-    // Event Listeners
-    prevBtn.addEventListener('click', () => changeSlide(-1));
-    nextBtn.addEventListener('click', () => changeSlide(1));
-
-    // Keyboard navigation
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft') changeSlide(-1);
-        if (e.key === 'ArrowRight') changeSlide(1);
+    // Event listeners
+    prevBtn.addEventListener('click', function() {
+        if (currentIndex > 0) {
+            currentIndex--;
+            showSlide(currentIndex);
+        }
     });
 
-    // Touch support
-    let touchStartX = 0;
-    let touchEndX = 0;
-
-    carousel.addEventListener('touchstart', (e) => {
-        touchStartX = e.changedTouches[0].screenX;
-    }, false);
-
-    carousel.addEventListener('touchend', (e) => {
-        touchEndX = e.changedTouches[0].screenX;
-        if (touchStartX - touchEndX > 50) {
-            changeSlide(1);
-        } else if (touchEndX - touchStartX > 50) {
-            changeSlide(-1);
+    nextBtn.addEventListener('click', function() {
+        if (currentIndex < slides.length - 1) {
+            currentIndex++;
+            showSlide(currentIndex);
         }
-    }, false);
+    });
 
-    // Initial button state
-    updateButtons();
+    dotsContainer.addEventListener('click', function(e) {
+        if (e.target.classList.contains('dot')) {
+            currentIndex = parseInt(e.target.getAttribute('data-index'));
+            showSlide(currentIndex);
+        }
+    });
+
+    // Initial setup
+    showSlide(currentIndex);
 });
 </script>
 
