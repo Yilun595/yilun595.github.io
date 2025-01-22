@@ -10,8 +10,6 @@ location: "Beijing, China"
 ---
 Phenological changes of vegetation bring diversity to the urban landscape, especially in temperate regions. By taking Beijing as a study case, this research project evaluated the phenological changes of landscape plants at both individual and plant community level. Results obtained were expected to aid selection of plant species in planting design.
 
-**NOTE:** Contents to be updated.
-{: .notice}
 
 Phenology observation of commonly used woody species
 ----
