@@ -105,7 +105,7 @@ author_profile: true
 ## I'm on my way to see the sunset
 
 <div class="album-container">
-    <button class="scroll-btn left" onclick="changeSlide(-1)">←</button>
+    <button class="scroll-btn left" id="prevBtn">←</button>
     <div class="album-carousel" id="imageCarousel">
         <div class="album-slide">
             <img src="/images/Life/20231112.jpg" alt="Po Pin Chau"/>
@@ -120,79 +120,84 @@ author_profile: true
             <img src="/images/Life/YuKwai.jpg" alt="YuKwai"/>
         </div>
     </div>
-    <button class="scroll-btn right" onclick="changeSlide(1)">→</button>
+    <button class="scroll-btn right" id="nextBtn">→</button>
     <div class="dots-container" id="dotsContainer"></div>
 </div>
 
 <script>
-let currentSlide = 0;
-const carousel = document.getElementById('imageCarousel');
-const slides = carousel.getElementsByClassName('album-slide');
-const totalSlides = slides.length;
+document.addEventListener('DOMContentLoaded', function() {
+    let currentSlide = 0;
+    const carousel = document.getElementById('imageCarousel');
+    const slides = carousel.getElementsByClassName('album-slide');
+    const totalSlides = slides.length;
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
 
-// Create dots
-const dotsContainer = document.getElementById('dotsContainer');
-for (let i = 0; i < totalSlides; i++) {
-    const dot = document.createElement('div');
-    dot.className = `dot ${i === 0 ? 'active' : ''}`;
-    dot.onclick = () => goToSlide(i);
-    dotsContainer.appendChild(dot);
-}
-
-function updateDots() {
-    const dots = document.getElementsByClassName('dot');
-    for (let i = 0; i < dots.length; i++) {
-        dots[i].className = `dot ${i === currentSlide ? 'active' : ''}`;
+    // Create dots
+    const dotsContainer = document.getElementById('dotsContainer');
+    for (let i = 0; i < totalSlides; i++) {
+        const dot = document.createElement('div');
+        dot.className = `dot ${i === 0 ? 'active' : ''}`;
+        dot.addEventListener('click', () => goToSlide(i));
+        dotsContainer.appendChild(dot);
     }
-}
 
-function updateButtons() {
-    const leftBtn = document.querySelector('.scroll-btn.left');
-    const rightBtn = document.querySelector('.scroll-btn.right');
-    
-    leftBtn.style.display = currentSlide <= 0 ? 'none' : 'flex';
-    rightBtn.style.display = currentSlide >= totalSlides - 1 ? 'none' : 'flex';
-}
+    function updateDots() {
+        const dots = document.getElementsByClassName('dot');
+        Array.from(dots).forEach((dot, i) => {
+            dot.className = `dot ${i === currentSlide ? 'active' : ''}`;
+        });
+    }
 
-function goToSlide(index) {
-    currentSlide = index;
-    carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
-    updateDots();
+    function updateButtons() {
+        prevBtn.style.display = currentSlide <= 0 ? 'none' : 'flex';
+        nextBtn.style.display = currentSlide >= totalSlides - 1 ? 'none' : 'flex';
+    }
+
+    function goToSlide(index) {
+        currentSlide = index;
+        carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+        updateDots();
+        updateButtons();
+    }
+
+    function changeSlide(direction) {
+        const newIndex = currentSlide + direction;
+        if (newIndex >= 0 && newIndex < totalSlides) {
+            goToSlide(newIndex);
+        }
+    }
+
+    // Event Listeners
+    prevBtn.addEventListener('click', () => changeSlide(-1));
+    nextBtn.addEventListener('click', () => changeSlide(1));
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') changeSlide(-1);
+        if (e.key === 'ArrowRight') changeSlide(1);
+    });
+
+    // Touch support
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    carousel.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    }, false);
+
+    carousel.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        if (touchStartX - touchEndX > 50) {
+            changeSlide(1);
+        } else if (touchEndX - touchStartX > 50) {
+            changeSlide(-1);
+        }
+    }, false);
+
+    // Initial button state
     updateButtons();
-}
-
-function changeSlide(direction) {
-    const newIndex = currentSlide + direction;
-    if (newIndex >= 0 && newIndex < totalSlides) {
-        goToSlide(newIndex);
-    }
-}
-
-// Optional: Add keyboard navigation
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowLeft') changeSlide(-1);
-    if (e.key === 'ArrowRight') changeSlide(1);
 });
-
-// Initial button state
-updateButtons();
-
-// Optional: Add touch support
-let touchStartX = 0;
-let touchEndX = 0;
-
-carousel.addEventListener('touchstart', (e) => {
-    touchStartX = e.changedTouches[0].screenX;
-}, false);
-
-carousel.addEventListener('touchend', (e) => {
-    touchEndX = e.changedTouches[0].screenX;
-    if (touchStartX - touchEndX > 50) {
-        changeSlide(1);
-    } else if (touchEndX - touchStartX > 50) {
-        changeSlide(-1);
-    }
-}, false);
 </script>
 
 ## I play a little guitar on the side
