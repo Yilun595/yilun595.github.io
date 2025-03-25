@@ -28,3 +28,6 @@ Education
 Work experience
 ======
 * Assistant Landscape Designer, `AECOM, Beijing`, 2020-2021
+
+
+<script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=xUw022oUllb-a8vAdBQh6HRG38-rimx_Ot410aLjGwM&cl=ffffff&w=a"></script>
