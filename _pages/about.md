@@ -30,4 +30,4 @@ Work experience
 * Assistant Landscape Designer, `AECOM, Beijing`, 2020-2021
 
 
-<script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=FVmOu0coOq1HCxeuSmFj4hGeBKNt-qnLUKTOmQuWGUM"></script>
+<script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=ffffff&w=200&t=n&d=xUw022oUllb-a8vAdBQh6HRG38-rimx_Ot410aLjGwM&co=d8d8d8&cmo=6d8973&cmn=69c17b'></script>
