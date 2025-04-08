@@ -280,6 +280,90 @@ function initializeCarousel() {
 </script>
 
 
+## My plant specimen
+
+<div class="album-container">
+    <button class="scroll-btn left" id="prevBtn">←</button>
+    <div class="album-carousel" id="imageCarousel">
+        <div class="album-slide active">
+            <img src="/images/Life/Specimen.jpg" alt="specimen"/>
+        </div>
+    </div>
+    <button class="scroll-btn right" id="nextBtn">→</button>
+    <div class="dots-container" id="dotsContainer"></div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', initializeCarousel);
+
+// Backup initialization in case DOMContentLoaded has already fired
+if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    initializeCarousel();
+}
+
+function initializeCarousel() {
+    const slides = document.getElementsByClassName('album-slide');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const dotsContainer = document.getElementById('dotsContainer');
+    let currentIndex = 0;
+
+    // Clear existing dots before creating new ones
+    dotsContainer.innerHTML = '';
+
+    // Create dots
+    for (let i = 0; i < slides.length; i++) {
+        const dot = document.createElement('div');
+        dot.className = `dot ${i === 0 ? 'active' : ''}`;
+        dot.setAttribute('data-index', i);
+        dotsContainer.appendChild(dot);
+    }
+
+    function showSlide(index) {
+        // Hide all slides
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].classList.remove('active');
+            dotsContainer.children[i].classList.remove('active');
+        }
+        
+        // Show selected slide
+        slides[index].classList.add('active');
+        dotsContainer.children[index].classList.add('active');
+        
+        // Update button visibility
+        prevBtn.style.display = index === 0 ? 'none' : 'flex';
+        nextBtn.style.display = index === slides.length - 1 ? 'none' : 'flex';
+    }
+
+    // Event listeners
+    prevBtn.addEventListener('click', function() {
+        if (currentIndex > 0) {
+            currentIndex--;
+            showSlide(currentIndex);
+        }
+    });
+
+    nextBtn.addEventListener('click', function() {
+        if (currentIndex < slides.length - 1) {
+            currentIndex++;
+            showSlide(currentIndex);
+        }
+    });
+
+    dotsContainer.addEventListener('click', function(e) {
+        if (e.target.classList.contains('dot')) {
+            currentIndex = parseInt(e.target.getAttribute('data-index'));
+            showSlide(currentIndex);
+        }
+    });
+
+    // Initial setup
+    showSlide(currentIndex);
+}
+</script>
+
+
+
 ## I play a little guitar on the side
 
 <iframe 
