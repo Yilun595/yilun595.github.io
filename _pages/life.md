@@ -5,6 +5,7 @@ permalink: /life/
 author_profile: true
 ---
 
+
 <style>
 .album-container {
     position: relative;
@@ -105,12 +106,11 @@ author_profile: true
     }
 }
 </style>
-
 ## I'm on my way to see the sunset
 
 <div class="album-container">
-    <button class="scroll-btn left" id="prevBtn">←</button>
-    <div class="album-carousel" id="imageCarousel">
+    <button class="scroll-btn left">←</button>
+    <div class="album-carousel">
         <div class="album-slide active">
             <img src="/images/Life/20231112.jpg" alt="Po Pin Chau"/>
         </div>
@@ -124,245 +124,85 @@ author_profile: true
             <img src="/images/Life/YuKwai.jpg" alt="YuKwai"/>
         </div>
     </div>
-    <button class="scroll-btn right" id="nextBtn">→</button>
-    <div class="dots-container" id="dotsContainer"></div>
+    <button class="scroll-btn right">→</button>
+    <div class="dots-container"></div>
 </div>
-
-<script>
-document.addEventListener('DOMContentLoaded', initializeCarousel);
-
-// Backup initialization in case DOMContentLoaded has already fired
-if (document.readyState === 'complete' || document.readyState === 'interactive') {
-    initializeCarousel();
-}
-
-function initializeCarousel() {
-    const slides = document.getElementsByClassName('album-slide');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    const dotsContainer = document.getElementById('dotsContainer');
-    let currentIndex = 0;
-
-    // Clear existing dots before creating new ones
-    dotsContainer.innerHTML = '';
-
-    // Create dots
-    for (let i = 0; i < slides.length; i++) {
-        const dot = document.createElement('div');
-        dot.className = `dot ${i === 0 ? 'active' : ''}`;
-        dot.setAttribute('data-index', i);
-        dotsContainer.appendChild(dot);
-    }
-
-    function showSlide(index) {
-        // Hide all slides
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].classList.remove('active');
-            dotsContainer.children[i].classList.remove('active');
-        }
-        
-        // Show selected slide
-        slides[index].classList.add('active');
-        dotsContainer.children[index].classList.add('active');
-        
-        // Update button visibility
-        prevBtn.style.display = index === 0 ? 'none' : 'flex';
-        nextBtn.style.display = index === slides.length - 1 ? 'none' : 'flex';
-    }
-
-    // Event listeners
-    prevBtn.addEventListener('click', function() {
-        if (currentIndex > 0) {
-            currentIndex--;
-            showSlide(currentIndex);
-        }
-    });
-
-    nextBtn.addEventListener('click', function() {
-        if (currentIndex < slides.length - 1) {
-            currentIndex++;
-            showSlide(currentIndex);
-        }
-    });
-
-    dotsContainer.addEventListener('click', function(e) {
-        if (e.target.classList.contains('dot')) {
-            currentIndex = parseInt(e.target.getAttribute('data-index'));
-            showSlide(currentIndex);
-        }
-    });
-
-    // Initial setup
-    showSlide(currentIndex);
-}
-</script>
 
 ## I run
 
 <div class="album-container">
-    <button class="scroll-btn left" id="prevBtn">←</button>
-    <div class="album-carousel" id="imageCarousel">
+    <button class="scroll-btn left">←</button>
+    <div class="album-carousel">
         <div class="album-slide active">
             <img src="/images/Life/20250209.jpg" alt="Marathon"/>
         </div>
     </div>
-    <button class="scroll-btn right" id="nextBtn">→</button>
-    <div class="dots-container" id="dotsContainer"></div>
+    <button class="scroll-btn right">→</button>
+    <div class="dots-container"></div>
 </div>
-
-<script>
-document.addEventListener('DOMContentLoaded', initializeCarousel);
-
-// Backup initialization in case DOMContentLoaded has already fired
-if (document.readyState === 'complete' || document.readyState === 'interactive') {
-    initializeCarousel();
-}
-
-function initializeCarousel() {
-    const slides = document.getElementsByClassName('album-slide');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    const dotsContainer = document.getElementById('dotsContainer');
-    let currentIndex = 0;
-
-    // Clear existing dots before creating new ones
-    dotsContainer.innerHTML = '';
-
-    // Create dots
-    for (let i = 0; i < slides.length; i++) {
-        const dot = document.createElement('div');
-        dot.className = `dot ${i === 0 ? 'active' : ''}`;
-        dot.setAttribute('data-index', i);
-        dotsContainer.appendChild(dot);
-    }
-
-    function showSlide(index) {
-        // Hide all slides
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].classList.remove('active');
-            dotsContainer.children[i].classList.remove('active');
-        }
-        
-        // Show selected slide
-        slides[index].classList.add('active');
-        dotsContainer.children[index].classList.add('active');
-        
-        // Update button visibility
-        prevBtn.style.display = index === 0 ? 'none' : 'flex';
-        nextBtn.style.display = index === slides.length - 1 ? 'none' : 'flex';
-    }
-
-    // Event listeners
-    prevBtn.addEventListener('click', function() {
-        if (currentIndex > 0) {
-            currentIndex--;
-            showSlide(currentIndex);
-        }
-    });
-
-    nextBtn.addEventListener('click', function() {
-        if (currentIndex < slides.length - 1) {
-            currentIndex++;
-            showSlide(currentIndex);
-        }
-    });
-
-    dotsContainer.addEventListener('click', function(e) {
-        if (e.target.classList.contains('dot')) {
-            currentIndex = parseInt(e.target.getAttribute('data-index'));
-            showSlide(currentIndex);
-        }
-    });
-
-    // Initial setup
-    showSlide(currentIndex);
-}
-</script>
-
 
 ## My plant specimen
 
 <div class="album-container">
-    <button class="scroll-btn left" id="prevBtn">←</button>
-    <div class="album-carousel" id="imageCarousel">
+    <button class="scroll-btn left">←</button>
+    <div class="album-carousel">
         <div class="album-slide active">
             <img src="/images/Life/Specimen.jpg" alt="specimen"/>
         </div>
     </div>
-    <button class="scroll-btn right" id="nextBtn">→</button>
-    <div class="dots-container" id="dotsContainer"></div>
+    <button class="scroll-btn right">→</button>
+    <div class="dots-container"></div>
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', initializeCarousel);
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.album-container').forEach(initCarousel);
+});
 
-// Backup initialization in case DOMContentLoaded has already fired
-if (document.readyState === 'complete' || document.readyState === 'interactive') {
-    initializeCarousel();
-}
-
-function initializeCarousel() {
-    const slides = document.getElementsByClassName('album-slide');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    const dotsContainer = document.getElementById('dotsContainer');
+function initCarousel(container) {
+    const carousel = container.querySelector('.album-carousel');
+    const slides = container.querySelectorAll('.album-slide');
+    const prevBtn = container.querySelector('.scroll-btn.left');
+    const nextBtn = container.querySelector('.scroll-btn.right');
+    const dotsContainer = container.querySelector('.dots-container');
     let currentIndex = 0;
 
-    // Clear existing dots before creating new ones
-    dotsContainer.innerHTML = '';
-
     // Create dots
-    for (let i = 0; i < slides.length; i++) {
+    slides.forEach((_, index) => {
         const dot = document.createElement('div');
-        dot.className = `dot ${i === 0 ? 'active' : ''}`;
-        dot.setAttribute('data-index', i);
+        dot.className = 'dot' + (index === 0 ? ' active' : '');
+        dot.addEventListener('click', () => goToSlide(index));
         dotsContainer.appendChild(dot);
+    });
+
+    // Navigation functions
+    function goToSlide(index) {
+        currentIndex = (index + slides.length) % slides.length;
+        updateCarousel();
     }
 
-    function showSlide(index) {
-        // Hide all slides
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].classList.remove('active');
-            dotsContainer.children[i].classList.remove('active');
-        }
+    function updateCarousel() {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === currentIndex);
+        });
         
-        // Show selected slide
-        slides[index].classList.add('active');
-        dotsContainer.children[index].classList.add('active');
-        
-        // Update button visibility
-        prevBtn.style.display = index === 0 ? 'none' : 'flex';
-        nextBtn.style.display = index === slides.length - 1 ? 'none' : 'flex';
+        dotsContainer.querySelectorAll('.dot').forEach((dot, i) => {
+            dot.classList.toggle('active', i === currentIndex);
+        });
+
+        prevBtn.style.display = currentIndex === 0 ? 'none' : 'flex';
+        nextBtn.style.display = currentIndex === slides.length - 1 ? 'none' : 'flex';
     }
 
     // Event listeners
-    prevBtn.addEventListener('click', function() {
-        if (currentIndex > 0) {
-            currentIndex--;
-            showSlide(currentIndex);
-        }
-    });
-
-    nextBtn.addEventListener('click', function() {
-        if (currentIndex < slides.length - 1) {
-            currentIndex++;
-            showSlide(currentIndex);
-        }
-    });
-
-    dotsContainer.addEventListener('click', function(e) {
-        if (e.target.classList.contains('dot')) {
-            currentIndex = parseInt(e.target.getAttribute('data-index'));
-            showSlide(currentIndex);
-        }
-    });
+    prevBtn.addEventListener('click', () => goToSlide(currentIndex - 1));
+    nextBtn.addEventListener('click', () => goToSlide(currentIndex + 1));
 
     // Initial setup
-    showSlide(currentIndex);
+    updateCarousel();
 }
+
 </script>
-
-
 
 ## I play a little guitar on the side
 

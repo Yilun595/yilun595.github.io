@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac6d6995-fdd1-4604-a610-007b684f5a85" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/_portfolio/EXPO2018.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/PortfolioImage/Expo/01.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_pages/life.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/life.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_pages/research.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/research.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_portfolio/RG2017.md" beforeDir="false" afterPath="$PROJECT_DIR$/_portfolio/RG2017.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/2020UGS.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/2020UGS.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,16 +29,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mewbl/OneDrive - connect.hku.hk/github/PersonalPage/yilun595.github.io/images/Life&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/mewbl/OneDrive - connect.hku.hk/github/PersonalPage/yilun595.github.io/images/PortfolioImage/Expo"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mewbl\OneDrive - connect.hku.hk\github\PersonalPage\yilun595.github.io\images\PortfolioImage\Expo" />
       <recent name="C:\Users\mewbl\OneDrive - connect.hku.hk\github\PersonalPage\yilun595.github.io\images\Life" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
