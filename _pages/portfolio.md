@@ -14,7 +14,7 @@ Merit Prize in [Design Competition for Transformation of Sensory Garden at Kwun 
 
 
 
-<b>[02]</b>  [Planting design for a rain garden on BFU campus](/portfolio/KT2022)
+<b>[02]</b>  [Planting design for a rain garden on BFU campus](/portfolio/RG2017)
 ----
 
 <img src="/images/PortfolioImage/RG/RG_s.png" alt="Built" style="width: 700px; height: auto; border: 1px solid grey;"/>
