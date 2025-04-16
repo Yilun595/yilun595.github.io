@@ -141,6 +141,8 @@ author_profile: true
     <div class="dots-container"></div>
 </div>
 
+cr. Shuang Liu
+
 ## My plant specimen
 
 <div class="album-container">
