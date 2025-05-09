@@ -10,6 +10,35 @@ author_profile: true
 
 Ongoing PhD thesis, <i>The University of Hong Kong</i>, 2025.
 
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panoramic Image In Hong Kong's PHE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <style>
+    #panorama {
+        width: 700px;
+        height: 230px;
+    }
+    </style>
+</head>
+<body>
+
+<div id="panorama"></div>
+<script>
+pannellum.viewer('panorama', {
+    "type": "equirectangular",
+    "panorama": "/images/PanoImage_PHE.jpg",
+    "autoLoad": true,
+    "autoRotate":5
+});
+</script>
+
+</body>
+</html>
+
 This ongoing PhD project is aimed to assist evidence-based design of future-heat-resilient public spaces. It will discuss how the diversity of thermal environment can be created and utilized to enhance the thermal experiences in outdoor area.
 
 <b>[02]</b>  [Urban green spaces’ atmospheric cooling in Beijing, China](/research/2020-UGScooling)
