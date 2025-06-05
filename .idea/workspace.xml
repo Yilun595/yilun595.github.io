@@ -5,15 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac6d6995-fdd1-4604-a610-007b684f5a85" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/images/PanoImage_PHE.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_pages/research.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/research.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/pano-43.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_pages/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/about.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_pages/cv.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/cv.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_talks/2012-03-01-talk-1.md" beforeDir="false" afterPath="$PROJECT_DIR$/_talks/2012-03-01-talk-1.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,17 +35,18 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/mewbl/OneDrive - connect.hku.hk/github/PersonalPage/yilun595.github.io/images"
+    "last_opened_file_path": "C:/Users/mewbl/Desktop/JOS-3-master"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mewbl\OneDrive - connect.hku.hk\github\PersonalPage\yilun595.github.io\_publications" />
       <recent name="C:\Users\mewbl\OneDrive - connect.hku.hk\github\PersonalPage\yilun595.github.io\images" />
       <recent name="C:\Users\mewbl\OneDrive - connect.hku.hk\github\PersonalPage\yilun595.github.io\images\YL2025" />
-      <recent name="C:\Users\mewbl\OneDrive - connect.hku.hk\github\PersonalPage\yilun595.github.io\_publications" />
       <recent name="C:\Users\mewbl\OneDrive - connect.hku.hk\github\PersonalPage\yilun595.github.io\files" />
       <recent name="C:\Users\mewbl\OneDrive - connect.hku.hk\github\PersonalPage\yilun595.github.io\images\PortfolioImage\Expo" />
     </key>

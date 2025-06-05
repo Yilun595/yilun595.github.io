@@ -7,27 +7,5 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+## Full CV
 
-Education
-======
-* B.Agr. in Landscape Gardening, Beijing Forestry University, 2017
-* M.Agr. in Ornamental Plants and Horticulture, Beijing Forestry University, 2020
-* Ph.D in Landscape Architecture, The University of Hong Kong, 2025 (expected)
-
-Work experience
-======
-* AECOM, Beijing (2020-2021)
-  * Assistant Landscape Designer
-
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-  
-Service
-======
-* Journal Reviewer: Urban Climate, Urban Ecosystems
-* Social Media Editor: Cities & Health
