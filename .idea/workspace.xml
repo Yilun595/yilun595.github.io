@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac6d6995-fdd1-4604-a610-007b684f5a85" name="Changes" comment="" />
+    <list default="true" id="ac6d6995-fdd1-4604-a610-007b684f5a85" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/_publications/Guidebook_V1.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_publications/YL2025.md" beforeDir="false" afterPath="$PROJECT_DIR$/_publications/YL2025.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_research/2025-dOTC.md" beforeDir="false" afterPath="$PROJECT_DIR$/_research/2025-dOTC.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +51,7 @@
       <recent name="C:\Users\mewbl\OneDrive - connect.hku.hk\github\PersonalPage\yilun595.github.io\images\PortfolioImage\Expo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mewbl\OneDrive - connect.hku.hk\github\PersonalPage\yilun595.github.io\_publications" />
       <recent name="C:\Users\mewbl\OneDrive - connect.hku.hk\github\PersonalPage\yilun595.github.io\images\Life" />
     </key>
   </component>
