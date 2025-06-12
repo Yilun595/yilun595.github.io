@@ -217,3 +217,5 @@ function initCarousel(container) {
     allowfullscreen="true"
     style="width: 496px; height: 279px;">
 </iframe>
+
+In case you are looking for chords of [Hush's](https://yilun595.github.io/GuitarChords/GuitarChord_Hush.pdf) songs.
