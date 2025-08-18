@@ -9,5 +9,8 @@ main:
   - title: "Publications"
     url: /publications/
 
+  - title: "Packages"
+    url: /packages/
+
   - title: "Beyond research"
     url: /life/

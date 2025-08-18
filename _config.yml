@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Yilun Li"
   avatar           : "ProfilePic.jpg"
-  bio              : "PhD Student @HKU"
+  bio              : "PhD Candidate @ HKU"
   location         : "Hong Kong"
   employer         :
   pubmed           : 
@@ -99,10 +99,10 @@ author:
   github           : "Yilun595"
   google_plus      :
   keybase          :
-  instagram        : "yilunerrr"
+  instagram        : "yilun595"
   impactstory      :
   lastfm           :
-  linkedin         :
+  linkedin         : "yilun-li-7a4938279"
   orcid            : "https://orcid.org/0000-0001-7896-3374"
   pinterest        :
   soundcloud       :
@@ -240,6 +240,15 @@ defaults:
   - scope:
       path: ""
       type: life
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _packages
+  - scope:
+      path: ""
+      type: packages
     values:
       layout: single
       author_profile: true
