@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-**I'm looking for a job opportunity worldwide.**
+**I'm OPEN FOR WORK all around the world now.**
 {: .notice}
 
 I am a 4th-year PhD student at the Division of Landscape Architecture, [Faculty of Architecture](https://www.arch.hku.hk/), The University of Hong Kong, supervised by Prof. [Chao Ren](https://www.arch.hku.hk/staff/dla/ren-chao/). I obtained my Bachelor's degree in `Landscape Gardening` and master's degree in `Ornamental Plants and Horticulture` from [School of Landscape Architecture](https://solaold.bjfu.edu.cn/english/), Beijing Forestry University in `2017` and `2020`. Prior to my PhD study, I worked as an assistant landscape designer at `AECOM` Beijing office.
@@ -27,6 +27,13 @@ Education
 Work experience
 ======
 * Assistant Landscape Designer, `AECOM, Beijing`, 2020-2021
+
+Latest News
+======
+* <b>[2025/08/20]</b> I defended my PhD thesis. Special thanks to my thesis examiners, and my supervisors, Prof. Chao Ren, and Dr. Tanya Z. Tan.
+* <b>[2025/07/21-25]</b> I attended [Global School on Heat Adaptation](https://icm-mhi.org/etudiant/global-school-on-heat-adaptation/) in Montreal, Canada. It was a fascinating week learning from people from diverse backgrounds, especially physiologists. Thanks a lot for the opportunity.
+* <b>[2025/07/07-11]</b> I attended [ICUC12](https://icuc12.eu/) and presented our [walking experiment on dynamic outdoor thermal comfort](https://doi.org/10.5194/icuc12-84) in Hong Kong's Public Housing Estates. I like the quote "All progress takes place outside the comfort zone".
+
 
 <div style="float: left; margin-left: 20px;">  <!-- Adjust margin as needed -->
     <script 

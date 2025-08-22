@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac6d6995-fdd1-4604-a610-007b684f5a85" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/_pages/packages.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Package1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/navigation.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/navigation.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_pages/sitemap.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/sitemap.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_pages/terms.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/terms.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_drafts/post-draft.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_pages/404.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/404.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_pages/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/about.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_pages/cv.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_pages/non-menu-page.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/YilunLi-CV.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/files/YilunLi-CV.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,15 +37,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/mewbl/OneDrive - connect.hku.hk/github/PersonalPage/yilun595.github.io/images"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/icloudDrive/iCloudDrive/01_Research/02_Git/yilun595.github.io&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mewbl\OneDrive - connect.hku.hk\github\PersonalPage\yilun595.github.io\images" />
@@ -55,6 +55,7 @@
       <recent name="C:\Users\mewbl\OneDrive - connect.hku.hk\github\PersonalPage\yilun595.github.io\_publications" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\icloudDrive\iCloudDrive\01_Research\02_Git\yilun595.github.io\files" />
       <recent name="C:\Users\mewbl\OneDrive - connect.hku.hk\github\PersonalPage\yilun595.github.io\files" />
       <recent name="C:\Users\mewbl\OneDrive - connect.hku.hk\github\PersonalPage\yilun595.github.io\_publications" />
       <recent name="C:\Users\mewbl\OneDrive - connect.hku.hk\github\PersonalPage\yilun595.github.io\images\Life" />
@@ -70,5 +71,16 @@
       <updated>1737375981898</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/talkmap.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
