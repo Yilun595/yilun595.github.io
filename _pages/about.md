@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-**I'm OPEN FOR WORK all around the world now.**
+**I'm OPEN FOR WORK.**
 {: .notice}
 
 I am a 4th-year PhD student at the Division of Landscape Architecture, [Faculty of Architecture](https://www.arch.hku.hk/), The University of Hong Kong, supervised by Prof. [Chao Ren](https://www.arch.hku.hk/staff/dla/ren-chao/). I obtained my Bachelor's degree in `Landscape Gardening` and master's degree in `Ornamental Plants and Horticulture` from [School of Landscape Architecture](https://solaold.bjfu.edu.cn/english/), Beijing Forestry University in `2017` and `2020`. Prior to my PhD study, I worked as an assistant landscape designer at `AECOM` Beijing office.
