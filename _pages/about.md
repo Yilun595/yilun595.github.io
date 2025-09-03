@@ -8,21 +8,18 @@ redirect_from:
   - /about.html
 ---
 
-**I'm OPEN FOR WORK.**
-{: .notice}
-
-I am a 4th-year PhD student at the Division of Landscape Architecture, [Faculty of Architecture](https://www.arch.hku.hk/), The University of Hong Kong, supervised by Prof. [Chao Ren](https://www.arch.hku.hk/staff/dla/ren-chao/). I obtained my Bachelor's degree in `Landscape Gardening` and master's degree in `Ornamental Plants and Horticulture` from [School of Landscape Architecture](https://solaold.bjfu.edu.cn/english/), Beijing Forestry University in `2017` and `2020`. Prior to my PhD study, I worked as an assistant landscape designer at `AECOM` Beijing office.
+I am a 4th-year PhD candidate at the Division of Landscape Architecture, [Faculty of Architecture](https://www.arch.hku.hk/), The University of Hong Kong, supervised by Prof. [Chao Ren](https://www.arch.hku.hk/staff/dla/ren-chao/). I obtained my Bachelor's degree in `Landscape Gardening` and master's degree in `Ornamental Plants and Horticulture` from [School of Landscape Architecture](https://solaold.bjfu.edu.cn/english/), Beijing Forestry University in `2017` and `2020`. Prior to my PhD study, I worked as an assistant landscape designer at `AECOM` Beijing office.
 
 My research focuses on the `human experiences in urban landscape` under the changing climates, aiming to support `evidence-based` `climate-responsive` landscape and urban design. My current research evaluates `dynamic outdoor thermal comfort` in subtropical Hong Kong under the new normal of heatwaves.
 
-[Full CV](http://yilun595.github.io/files/YilunLi-CV.pdf)
+[Full CV](http://yilun595.github.io/files/YilunLi_CV.pdf)
 
 
 Education
 ======
 * B.Agr. in Landscape Gardening, `Beijing Forestry University`, 2013-2017
 * M.Agr. in Ornamental Plants and Horticulture, `Beijing Forestry University`, 2017-2020
-* Ph.D. in Landscape Architecture, `The University of Hong Kong`, 2021-2025 (expected)
+* Ph.D. in Landscape Architecture, `The University of Hong Kong`, 2021-2025
 
 Work experience
 ======
@@ -43,3 +40,4 @@ Latest News
     </script>
 </div>
 
+Last updated: 9/3/2025

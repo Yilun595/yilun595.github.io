@@ -7,6 +7,7 @@
     <list default="true" id="ac6d6995-fdd1-4604-a610-007b684f5a85" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_pages/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/about.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/YilunLi-CV.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/files/YilunLi_CV.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,22 +32,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/icloudDrive/iCloudDrive/01_Research/02_Git/yilun595.github.io&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/git/yilun595.github.io/files"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\git\yilun595.github.io\files" />
       <recent name="C:\Users\mewbl\OneDrive - connect.hku.hk\github\PersonalPage\yilun595.github.io\images" />
       <recent name="C:\Users\mewbl\OneDrive - connect.hku.hk\github\PersonalPage\yilun595.github.io\_pages" />
       <recent name="C:\Users\mewbl\OneDrive - connect.hku.hk\github\PersonalPage\yilun595.github.io\files" />
       <recent name="C:\Users\mewbl\OneDrive - connect.hku.hk\github\PersonalPage\yilun595.github.io\GuitarChords" />
-      <recent name="C:\Users\mewbl\OneDrive - connect.hku.hk\github\PersonalPage\yilun595.github.io\_publications" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\icloudDrive\iCloudDrive\01_Research\02_Git\yilun595.github.io\files" />
