@@ -8,22 +8,20 @@ redirect_from:
   - /about.html
 ---
 
-My research focuses on the `human experiences in urban landscape` under the `changing climates`, by adopting `humen-centric approaches`. 
-
-Further, this knowledge shall be used to support `evidence-based` `climate-responsive` landscape and urban design. 
+With educational backgrounds and practical experiences in landscape architecture, my research focuses on the `human experiences in urban landscape` under the `changing climates`, by adopting humen-centric approaches. Further, this knowledge shall be used to support evidence-based climate-responsive landscape and urban design. 
 
 [Full CV](http://yilun595.github.io/files/YilunLi_CV.pdf)
 
 
 Education
 ======
-* B.Agr. in Landscape Gardening, [School of Landscape Architecture](https://solaold.bjfu.edu.cn/english/), `Beijing Forestry University`, 2013-2017
-* M.Agr. in Ornamental Plants and Horticulture, [School of Landscape Architecture](https://solaold.bjfu.edu.cn/english/), `Beijing Forestry University`, 2017-2020
-* Ph.D. in Landscape Architecture, [Faculty of Architecture](https://www.arch.hku.hk/), `The University of Hong Kong`, 2021-2025
+* B.Agr. in Landscape Gardening, `Beijing Forestry University`, 2013.9-2017.6
+* M.Agr. in Ornamental Plants and Horticulture, `Beijing Forestry University`, 2017.9-2020.6
+* Ph.D. in Landscape Architecture, `The University of Hong Kong`, 2022.1-2025.9
 
 Work experience
 ======
-* Assistant Landscape Designer, `AECOM, Beijing`, 2020-2021
+* Assistant Landscape Designer, `AECOM, Beijing`, 2020.7-2021.11
 
 Latest News
 ======
@@ -40,4 +38,4 @@ Latest News
     </script>
 </div>
 
-Last updated: 9/3/2025
+Last updated: 9/30/2025
