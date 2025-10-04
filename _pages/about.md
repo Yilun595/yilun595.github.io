@@ -18,7 +18,7 @@ With educational backgrounds and practical experiences in landscape architecture
 ## Work experience
 * Assistant Landscape Designer, `AECOM, Beijing`, 2020-2021
 
-## [Full CV](http://yilun595.github.io/files/YilunLi_CV.pdf)
+[Full CV](http://yilun595.github.io/files/YilunLi_CV.pdf)
 
 
 <div style="float: left; margin-left: 20px;">  <!-- Adjust margin as needed -->
