@@ -10,7 +10,7 @@ locale                   : "Hong Kong"
 title                    : "Yilun's Site"
 title_separator          : "-"
 name                     : &name "Yilun Li"
-description              : &description "Postdoctoral Researcher"
+description              : &description "PhD"
 url                      : https://yilun595.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Yilun595/yilun595.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Yilun Li"
   avatar           : "ProfilePic.jpg"
-  bio              : "B. Agr., M. Agr (BFU); PhD (HKU)"
+  bio              : "PhD"
   location         : "Hong Kong"
   employer         :
   pubmed           : 

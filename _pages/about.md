@@ -16,9 +16,9 @@ With educational backgrounds and practical experiences in landscape architecture
 * <b>Ph.D.</b> in Landscape Architecture, `The University of Hong Kong`, 2022-2025
 
 ## Work experience
-* Assistant Landscape Designer, `AECOM, Beijing`, 2020.7-2021.11
+* Assistant Landscape Designer, `AECOM, Beijing`, 2020-2021
 
-[Full CV](http://yilun595.github.io/files/YilunLi_CV.pdf)
+## [Full CV](http://yilun595.github.io/files/YilunLi_CV.pdf)
 
 
 <div style="float: left; margin-left: 20px;">  <!-- Adjust margin as needed -->

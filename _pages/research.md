@@ -8,7 +8,7 @@ author_profile: true
 <b>[01]</b>  [Diversity in thermal experiences in residential public spaces in Hong Kong](/research/2025-dOTC)
 ----
 
-Ongoing PhD thesis, <i>The University of Hong Kong</i>, 2025.
+PhD thesis, <i>The University of Hong Kong</i>, 2025.
 
 <html>
 <head>
@@ -39,7 +39,7 @@ pannellum.viewer('panorama', {
 </body>
 </html>
 
-This ongoing PhD project is aimed to assist evidence-based design of future-heat-resilient public spaces. It will discuss how the diversity of thermal environment can be created and utilized to enhance the thermal experiences in outdoor area.
+This PhD project evaluates the diversity of microclimate and thermal experiences in residential public spaces in Hong Kong, a high-density city with a hot and humid climate. It combines field measurements, in-situ field survey, and numerical simulation to explore human's physiological and psychological experiences. It is aimed to assist evidence-based design of future-heat-resilient public spaces, through discussing how the diversity of thermal environment can be created and utilized to enhance the thermal experiences in the outdoor realm.
 
 <b>[02]</b>  [Urban green spaces’ atmospheric cooling in Beijing, China](/research/2020-UGScooling)
 ----
