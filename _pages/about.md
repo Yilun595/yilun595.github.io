@@ -14,13 +14,14 @@ I'm currently working as a postdoctoral research fellow at the `Berkeley Educati
 
 
 ## Work experience
-* Assistant Landscape Designer, `AECOM, Beijing`, 2020-2021
 * Postdoctoral Research Fellow, `Berkeley Education Alliance for Research in Singapore (BEARS)`, 2025-present
+* Assistant Landscape Designer, `AECOM, Beijing`, 2020-2021
 
 ## Education
-* <b>B.Agr.</b> in Landscape Gardening, `Beijing Forestry University`, 2013-2017
-* <b>M.Agr.</b> in Ornamental Plants and Horticulture, `Beijing Forestry University`, 2017-2020
 * <b>Ph.D.</b> in Landscape Architecture, `The University of Hong Kong`, 2022-2025
+* <b>M.Agr.</b> in Ornamental Plants and Horticulture, `Beijing Forestry University`, 2017-2020
+* <b>B.Agr.</b> in Landscape Gardening, `Beijing Forestry University`, 2013-2017
+
 
 
 [Full CV](http://yilun595.github.io/files/YilunLi_CV.pdf)
@@ -34,4 +35,4 @@ I'm currently working as a postdoctoral research fellow at the `Berkeley Educati
     </script>
 </div>
 
-Last updated: 9/30/2025
+Last updated: 11/16/2025
