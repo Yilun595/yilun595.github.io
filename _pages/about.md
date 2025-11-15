@@ -8,15 +8,20 @@ redirect_from:
   - /about.html
 ---
 
-With educational backgrounds and practical experiences in landscape architecture, my research focuses on the `human experiences in urban landscape` under the `changing climates`, by adopting humen-centric approaches. Further, this knowledge shall be used to support evidence-based climate-responsive landscape and urban design. 
+With educational backgrounds and practical experiences in landscape architecture, my research focuses on the `human experiences in urban landscape` under the `changing climates`, by adopting humen-centric approaches. Further, this knowledge shall be used to support evidence-based climate-responsive landscape and urban design.
+
+I'm currently working as a postdoctoral research fellow at the `Berkeley Education Alliance for Research in Singapore (BEARS)`, under the supervision of Prof. [Stefano Schiavon](https://ced.berkeley.edu/people/stefano-schiavon). I'm currently working on the [HEATS project](https://www.linkedin.com/pulse/heats-project-stefano-schiavon-mfk5c/).
+
+
+## Work experience
+* Assistant Landscape Designer, `AECOM, Beijing`, 2020-2021
+* Postdoctoral Research Fellow, `Berkeley Education Alliance for Research in Singapore (BEARS)`, 2025-present
 
 ## Education
 * <b>B.Agr.</b> in Landscape Gardening, `Beijing Forestry University`, 2013-2017
 * <b>M.Agr.</b> in Ornamental Plants and Horticulture, `Beijing Forestry University`, 2017-2020
 * <b>Ph.D.</b> in Landscape Architecture, `The University of Hong Kong`, 2022-2025
 
-## Work experience
-* Assistant Landscape Designer, `AECOM, Beijing`, 2020-2021
 
 [Full CV](http://yilun595.github.io/files/YilunLi_CV.pdf)
 
