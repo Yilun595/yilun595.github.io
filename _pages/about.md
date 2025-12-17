@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-With educational backgrounds and practical experiences in landscape architecture, my research focuses on the `human experiences in urban landscape` under the `changing climates`, by adopting humen-centric approaches. Further, this knowledge shall be used to support evidence-based climate-responsive landscape and urban design.
+With educational backgrounds and practical experiences in landscape architecture, my research focuses on the `human experiences in urban landscape` under the `changing climates`, by adopting human-centric approaches. Further, this knowledge shall be used to support evidence-based climate-responsive landscape and urban design.
 
 I'm currently working as a postdoctoral research fellow at the `Berkeley Education Alliance for Research in Singapore (BEARS)`, under the supervision of Prof. [Stefano Schiavon](https://ced.berkeley.edu/people/stefano-schiavon). I'm currently working on the [HEATS project](https://www.linkedin.com/pulse/heats-project-stefano-schiavon-mfk5c/).
 
