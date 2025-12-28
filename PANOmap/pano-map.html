@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Interactive Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+
+    <style>
+        body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; font-family: sans-serif; }
+        #map { height: 100vh; width: 100%; z-index: 1; }
+
+        /* --- CHANGED: The Popup Modal --- */
+        #panorama-modal {
+            display: none;
+            position: fixed;
+
+            /* Center the box */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            /* Size: occupy 80% of screen width, 70% of height */
+            width: 70%;
+            height: 60%;
+
+            /* Visual Styling (The "Card" look) */
+            background: #000;
+            z-index: 2000; /* Sit way on top of map */
+            box-shadow: 0 20px 50px rgba(0,0,0,0.8); /* Strong shadow to separate from map */
+            border: 4px solid white;
+            border-radius: 8px; /* Rounded corners */
+        }
+
+        #panorama { width: 100%; height: 100%; border-radius: 4px; }
+
+        /* --- CHANGED: Close Button Style --- */
+        #close-btn {
+            position: absolute;
+            top: -15px;      /* Hangs slightly off the top corner */
+            right: -15px;
+
+            width: 30px; height: 30px;
+            line-height: 30px;
+            text-align: center;
+
+            color: white;
+            background: red;
+            border-radius: 50%; /* Circle shape */
+            cursor: pointer;
+            z-index: 2001;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+            border: 2px solid white;
+        }
+        #close-btn:hover { background: darkred; }
+
+        /* Responsive: On mobile phones, make the popup larger so the pano is visible */
+        @media (max-width: 600px) {
+            #panorama-modal { width: 95%; height: 60%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="map"></div>
+
+    <div id="panorama-modal">
+        <div id="close-btn" onclick="closePano()">X</div>
+        <div id="panorama"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+
+    <script>
+        // --- 1. SETUP MAP ---
+        var map = L.map('map').setView([22.3193, 114.1694], 11);
+
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
+            subdomains: 'abcd',
+            maxZoom: 20
+        }).addTo(map);
+
+        // --- 2. PANO DATA ---
+        var locations = [
+            { lat: 22.417208, lng: 114.135856, title: "Tai Mao", img: "/PANOmap/PanoLib/20241011TaiMao.jpg" },
+            { lat: 22.357350, lng: 114.297055, title: "Sharp Island", img: "/PANOmap/PanoLib/20241005KiuTsui.jpg" },
+            { lat: 22.540487, lng: 114.441308, title: "Tung Ping", img: "/PANOmap/PanoLib/20240928TungPing.jpg" },
+            { lat: 22.258430, lng: 114.295996, title: "Tung Lung", img: "/PANOmap/PanoLib/20240330TungLung.jpg" },
+            { lat: 22.272173, lng: 114.136236, title: "High West", img: "/PANOmap/PanoLib/20230925HighWestNight.jpg" },
+            { lat: 22.208062, lng: 114.259013, title: "Cape D'Aguilar", img: "/PANOmap/PanoLib/20231225.jpg" },
+            { lat: 22.489690, lng: 114.208312, title: "Pat Sin Leng", img: "/PANOmap/PanoLib/20221231BatSin.jpg" },
+            { lat: 22.284177, lng: 114.137722, title: "Luk Yew", img: "/PANOmap/PanoLib/LukYewHall.jpg" },
+            { lat: 22.258002, lng: 113.958012, title: "Sunset Peak", img: "/PANOmap/PanoLib/SunsetPeak.jpg" },
+            { lat: 34.969033, lng: 135.781209, title: "Shrine", img: "/PANOmap/PanoLib/Shrine.jpg" },
+            { lat: 35.503478, lng: 138.776822, title: "Fuji", img: "/PANOmap/PanoLib/Fuji.jpg" },
+            { lat: 1.360722, lng: 103.812523, title: "Tree Top Walk", img: "/PANOmap/PanoLib/TreeTopWalk.jpg" },
+            { lat: 22.282119, lng: 114.196963, title: "Red Incense", img: "/PANOmap/PanoLib/20230924.jpg" },
+            { lat: 22.391994, lng: 114.149133, title: "SingMun", img: "/PANOmap/PanoLib/20231126SingMun.jpg" },
+            { lat: 22.272003, lng: 114.135906, title: "HighWest", img: "/PANOmap/PanoLib/20231119HighWest.jpg" },
+            { lat: 22.358428, lng: 114.374550, title: "Po Pin Chau", img: "/PANOmap/PanoLib/20231112_PoPinChau.jpg" },
+            { lat: 22.248071, lng: 113.933429, title: "Lantau", img: "/PANOmap/PanoLib/20231021_Lantau.jpg" },
+            { lat: 22.392056, lng: 114.252580, title: "OngPing", img: "/PANOmap/PanoLib/20231015_OngPing.jpg" },
+            { lat: 22.466120, lng: 114.091717, title: "OngPing", img: "/PANOmap/PanoLib/20231001_GaiGong.jpg" }
+        ];
+
+        // --- 3. RENDER MARKERS ---
+        locations.forEach(function(loc) {
+            var marker = L.marker([loc.lat, loc.lng]).addTo(map);
+            marker.bindTooltip(loc.title);
+            marker.on('click', function() {
+                openPano(loc.img, loc.title);
+            });
+        });
+
+        // --- 4. VIEWER LOGIC ---
+        var viewer;
+        function openPano(imagePath, title) {
+            var modal = document.getElementById('panorama-modal');
+            modal.style.display = 'block';
+
+            setTimeout(function(){
+                if(viewer) viewer.destroy();
+                viewer = pannellum.viewer('panorama', {
+                    "type": "equirectangular",
+                    "panorama": imagePath,
+                    "autoLoad": true,
+                    "autoRotate":5,
+                    "showFullscreen": false // Disable fullscreen button inside the popup
+                });
+            }, 50);
+        }
+
+        function closePano() {
+            document.getElementById('panorama-modal').style.display = 'none';
+            if(viewer) viewer.destroy();
+        }
+    </script>
+</body>
+</html>
