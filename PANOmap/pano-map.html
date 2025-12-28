@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Interactive Map</title>
+    <title>My Pano Photos Gallery</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -11,6 +11,25 @@
     <style>
         body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; font-family: sans-serif; }
         #map { height: 100vh; width: 100%; z-index: 1; }
+
+        #quote-box {
+            position: fixed;       /* Stays in place when scrolling/zooming */
+            bottom: 20px;          /* Distance from bottom */
+            left: 50%;             /* Move to horizontal center */
+            transform: translateX(-50%); /* Perfect centering adjustment */
+
+            background-color: rgba(255, 255, 255, 0); /* White with slight transparency */
+            padding: 10px 20px;
+            border-radius: 50px;   /* Pill shape */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+            // font-style: italic;
+            color: #333;
+            font-size: 14px;
+            z-index: 500;          /* Sit above map, but below popup (2000) */
+            text-align: center;
+            max-width: 80%;        /* Prevent it from being too wide on mobile */
+        }
 
         /* --- CHANGED: The Popup Modal --- */
         #panorama-modal {
@@ -67,6 +86,12 @@
 
     <div id="map"></div>
 
+    <div id="quote-box">
+    <i>"Human lives are a dialectical movement between shelter and venture, attachment and freedom."</i>
+    <br>
+    Yi-Fu Tuan (1977)
+    </div>
+
     <div id="panorama-modal">
         <div id="close-btn" onclick="closePano()">X</div>
         <div id="panorama"></div>
@@ -77,7 +102,7 @@
 
     <script>
         // --- 1. SETUP MAP ---
-        var map = L.map('map').setView([22.3193, 114.1694], 11);
+        var map = L.map('map').setView([22.3593, 114.1694], 11);
 
         L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
             attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
