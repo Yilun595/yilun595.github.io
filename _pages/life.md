@@ -34,7 +34,7 @@ author_profile: true
 </div>
 <p style="text-align: center; font-size: small;"></p>
 
-Check out the [places](../PANOmap/pano-map.html) my Insta360 and I have been to.
+Check out the [places](../PANOmap/places360.html) my Insta360 and I have been to.
 
 ## I run
 
