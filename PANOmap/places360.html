@@ -12,62 +12,93 @@
         body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; font-family: sans-serif; }
         #map { height: 100vh; width: 100%; z-index: 1; }
 
-        #quote-box {
-            position: fixed;       /* Stays in place when scrolling/zooming */
-            bottom: 20px;          /* Distance from bottom */
-            left: 50%;             /* Move to horizontal center */
-            transform: translateX(-50%); /* Perfect centering adjustment */
+        /* --- NEW: Title (Top Left) --- */
+        #page-title {
+            position: fixed;
+            top: 20px;
+            left: 60px;
+            z-index: 1000; /* Above map */
 
-            background-color: rgba(255, 255, 255, 0); /* White with slight transparency */
-            padding: 10px 20px;
-            border-radius: 50px;   /* Pill shape */
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-
-            // font-style: italic;
+            font-size: 24px;
+            font-weight: bold;
             color: #333;
-            font-size: 14px;
-            z-index: 500;          /* Sit above map, but below popup (2000) */
-            text-align: center;
-            max-width: 80%;        /* Prevent it from being too wide on mobile */
+
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            padding: 10px 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            pointer-events: none; /* Let clicks pass through if you don't want it selectable */
         }
 
-        /* --- CHANGED: The Popup Modal --- */
+        /* --- NEW: Back Button (Bottom Left) --- */
+        #back-link {
+            position: fixed;
+            bottom: 20px;
+            left: 60px;
+            z-index: 1000;
+
+            display: inline-block;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 14px;
+
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px 20px;
+            border-radius: 50px; /* Pill shape to match quote box */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            transition: background 0.2s;
+        }
+        #back-link:hover {
+            background-color: white;
+            color: black;
+        }
+
+        #quote-box {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            background-color: rgba(255, 255, 255, 0);
+            padding: 10px 20px;
+            border-radius: 50px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+            color: #333;
+            font-size: 14px;
+            z-index: 500;
+            text-align: center;
+            max-width: 80%;
+        }
+
         #panorama-modal {
             display: none;
             position: fixed;
-
-            /* Center the box */
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-
-            /* Size: occupy 80% of screen width, 70% of height */
             width: 70%;
             height: 60%;
-
-            /* Visual Styling (The "Card" look) */
             background: #000;
-            z-index: 2000; /* Sit way on top of map */
-            box-shadow: 0 20px 50px rgba(0,0,0,0.8); /* Strong shadow to separate from map */
+            z-index: 2000;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.8);
             border: 4px solid white;
-            border-radius: 8px; /* Rounded corners */
+            border-radius: 8px;
         }
 
         #panorama { width: 100%; height: 100%; border-radius: 4px; }
 
-        /* --- CHANGED: Close Button Style --- */
         #close-btn {
             position: absolute;
-            top: -15px;      /* Hangs slightly off the top corner */
+            top: -15px;
             right: -15px;
-
             width: 30px; height: 30px;
             line-height: 30px;
             text-align: center;
-
             color: white;
             background: red;
-            border-radius: 50%; /* Circle shape */
+            border-radius: 50%;
             cursor: pointer;
             z-index: 2001;
             font-weight: bold;
@@ -76,7 +107,6 @@
         }
         #close-btn:hover { background: darkred; }
 
-        /* Responsive: On mobile phones, make the popup larger so the pano is visible */
         @media (max-width: 600px) {
             #panorama-modal { width: 95%; height: 60%; }
         }
@@ -84,11 +114,14 @@
 </head>
 <body>
 
+    <div id="page-title">Places360</div>
+
+    <a id="back-link" href="https://yilun595.github.io/life/">&#8592; Back</a>
+
     <div id="map"></div>
 
     <div id="quote-box">
-    <i>"Human lives are a dialectical movement between shelter and venture, attachment and freedom."</i>
-    <br>  Yi-Fu Tuan (1977)
+    <i>"Human lives are a dialectical movement between shelter and venture, attachment and freedom."</i>  Yi-Fu Tuan (1977)
     </div>
 
     <div id="panorama-modal">
@@ -130,12 +163,13 @@
             { lat: 22.248071, lng: 113.933429, title: "Lantau Peak", img: "/PANOmap/PanoLib/20231021_Lantau.jpg" },
             { lat: 22.392056, lng: 114.252580, title: "Ngong Ping Campsite", img: "/PANOmap/PanoLib/20231015_OngPing.jpg" },
             { lat: 22.466120, lng: 114.091717, title: "Kai Kung Leng", img: "/PANOmap/PanoLib/20231001_GaiGong.jpg" },
-
             { lat: 22.278137, lng: 114.146835, title: "Victoria's Peak", img: "/PANOmap/PanoLib/20231205VictoriaPeak.jpg" },
             { lat: 22.348478, lng: 114.184445, title: "Lion Peak", img: "/PANOmap/PanoLib/20231203lionspeak.jpg" },
             { lat: 1.355677, lng: 103.799323, title: "Banyan Trail", img: "/PANOmap/PanoLib/20251129.jpg" },
+            { lat: 1.443342, lng: 103.736400, title: "Sungei Buloh Wetland Reserve", img: "/PANOmap/PanoLib/20251130Sngei.jpg" },
             { lat: 22.237933, lng: 114.156736, title: "Yuk Kwai Shan", img: "/PANOmap/PanoLib/20231202ApLeiChau.jpg" }
         ];
+
 
         // --- 3. RENDER MARKERS ---
         locations.forEach(function(loc) {
@@ -159,7 +193,7 @@
                     "panorama": imagePath,
                     "autoLoad": true,
                     "autoRotate":5,
-                    "showFullscreen": false // Disable fullscreen button inside the popup
+                    "showFullscreen": false
                 });
             }, 50);
         }
