@@ -6,7 +6,6 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
-comments: true
 ---
 
 With educational backgrounds and practical experiences in landscape architecture, my research focuses on the `human experiences in urban landscape` under the `changing climates`, by adopting human-centric approaches. Further, this knowledge shall be used to support evidence-based climate-responsive landscape and urban design.
