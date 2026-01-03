@@ -7,53 +7,86 @@
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
 
     <style>
         body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; font-family: sans-serif; }
         #map { height: 100vh; width: 100%; z-index: 1; }
 
-        /* --- NEW: Style for the black plus icon --- */
+        /* --- Refined Black Plus Icon --- */
         .black-plus-icon {
             color: black;
-            font-size: 37px;
-            font-weight: bold;
+            font-size: 24px;
+            font-weight: 900;
             text-align: center;
-            line-height: 37px; /* Center vertically within the icon box */
+            line-height: 28px;
+            background: rgba(255,255,255,0.4);
+            border-radius: 50%;
+            transition: transform 0.2s;
+        }
+        .black-plus-icon:hover {
+            transform: scale(1.3);
+            background: rgba(255,255,255,0.8);
         }
 
+        /* --- UI OVERLAYS --- */
         #page-title {
             position: fixed;
             top: 20px;
             left: 60px;
-            z-index: 1000; /* Above map */
-
+            z-index: 1000;
             font-size: 24px;
             font-weight: bold;
             color: #333;
-
-            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            background-color: rgba(255, 255, 255, 0.9);
             padding: 10px 15px;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            pointer-events: none; /* Let clicks pass through if you don't want it selectable */
+            pointer-events: none; /* Allows clicks to pass through */
         }
 
-        /* --- NEW: Back Button (Bottom Left) --- */
+        /* --- NEW: City Navigation Bar --- */
+        #city-nav {
+            position: fixed;
+            top: 80px; /* Positioned below the title */
+            left: 60px;
+            z-index: 1000;
+            display: flex;
+            gap: 10px;
+        }
+
+        .city-btn {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 13px;
+            color: #333;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: all 0.2s ease;
+        }
+
+        .city-btn:hover {
+            background-color: #333;
+            color: white;
+            transform: translateY(-2px);
+        }
+
         #back-link {
             position: fixed;
             bottom: 20px;
             left: 10px;
             z-index: 1000;
-
             display: inline-block;
             text-decoration: none;
             color: #333;
             font-weight: bold;
             font-size: 10px;
-
             background-color: rgba(255, 255, 255, 0.9);
             padding: 10px 20px;
-            border-radius: 50px; /* Pill shape to match quote box */
+            border-radius: 50px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.2);
             transition: background 0.2s;
         }
@@ -67,17 +100,16 @@
             bottom: 20px;
             left: 50%;
             transform: translateX(-50%);
-
             background-color: rgba(255, 255, 255, 0);
             padding: 10px 20px;
             border-radius: 50px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-
             color: #333;
             font-size: 14px;
             z-index: 500;
             text-align: center;
             max-width: 80%;
+            text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.8);
         }
 
         #panorama-modal {
@@ -88,21 +120,31 @@
             transform: translate(-50%, -50%);
             width: 70%;
             height: 60%;
-            background: #000;
+            background: #111;
             z-index: 2000;
             box-shadow: 0 20px 50px rgba(0,0,0,0.8);
             border: 4px solid white;
             border-radius: 8px;
         }
 
-        #panorama { width: 100%; height: 100%; border-radius: 4px; }
+        #panorama { width: 100%; height: 100%; border-radius: 4px; position: relative; z-index: 2; }
+
+        .pano-loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #888;
+            font-size: 14px;
+            z-index: 1;
+        }
 
         #close-btn {
             position: absolute;
             top: -15px;
             right: -15px;
             width: 30px; height: 30px;
-            line-height: 30px;
+            line-height: 28px;
             text-align: center;
             color: white;
             background: black;
@@ -117,6 +159,11 @@
 
         @media (max-width: 600px) {
             #panorama-modal { width: 95%; height: 60%; }
+            #quote-box { display: none; }
+            #back-link { bottom: 30px; }
+            /* On mobile, move nav closer to title */
+            #city-nav { top: 70px; left: 20px; gap: 5px; }
+            #page-title { left: 20px; }
         }
     </style>
 </head>
@@ -124,24 +171,33 @@
 
     <div id="page-title">Places360</div>
 
+    <div id="city-nav">
+        <div class="city-btn" onclick="flyToLocation(22.3593, 114.1694, 11)">Hong Kong</div>
+        <div class="city-btn" onclick="flyToLocation(1.3521, 103.8198, 12)">Singapore</div>
+        <div class="city-btn" onclick="flyToLocation(48.1351, 11.5820, 12)">Munich</div>
+    </div>
+
     <a id="back-link" href="https://yilun595.github.io/life/">&#8592; Back</a>
 
     <div id="map"></div>
 
     <div id="quote-box">
-    <i>"Human lives are a dialectical movement between shelter and venture, attachment and freedom."</i>  Yi-Fu Tuan (1977)
+        <i>"Human lives are a dialectical movement between shelter and venture, attachment and freedom."</i> — Yi-Fu Tuan (1977)
     </div>
 
     <div id="panorama-modal">
         <div id="close-btn" onclick="closePano()">X</div>
+        <div class="pano-loading">Loading 360 View...</div>
         <div id="panorama"></div>
     </div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
 
     <script>
         // --- 1. SETUP MAP ---
+        // Start centered on Hong Kong
         var map = L.map('map').setView([22.3593, 114.1694], 11);
 
         L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
@@ -149,6 +205,14 @@
             subdomains: 'abcd',
             maxZoom: 20
         }).addTo(map);
+
+        // --- NEW: Fly Function ---
+        function flyToLocation(lat, lng, zoom) {
+            map.flyTo([lat, lng], zoom, {
+                animate: true,
+                duration: 2.0 // Animation duration in seconds
+            });
+        }
 
         // --- 2. PANO DATA ---
         var locations = [
@@ -206,27 +270,33 @@
             { lat: 1.280929, lng: 103.793411, title: "Canopy Walk", img: "/PANOmap/PanoLib/20260101_HortPark.jpg" },
             { lat: 1.275990, lng: 103.815390,  title: "Henderson Waves", img: "/PANOmap/PanoLib/20260101_SouthernRidge.jpg" },
             { lat: 1.298133, lng: 103.907659,  title: "East Coast", img: "/PANOmap/PanoLib/IMG_20260103_133254_00_merged.jpg" },
-
         ];
 
         // --- 3. RENDER MARKERS ---
 
-        // Define the custom black plus icon
         var blackPlusIcon = L.divIcon({
             className: 'black-plus-icon',
             html: '+',
-            iconSize: [28,28], // Size of the icon box
-            iconAnchor: [12, 12] // Point of the icon which will correspond to marker's location (center)
+            iconSize: [28, 28],
+            iconAnchor: [14, 14]
+        });
+
+        var markers = L.markerClusterGroup({
+            showCoverageOnHover: false,
+            maxClusterRadius: 50,
+            animate: true
         });
 
         locations.forEach(function(loc) {
-            // Use the custom icon here
-            var marker = L.marker([loc.lat, loc.lng], {icon: blackPlusIcon}).addTo(map);
+            var marker = L.marker([loc.lat, loc.lng], {icon: blackPlusIcon});
             marker.bindTooltip(loc.title);
             marker.on('click', function() {
                 openPano(loc.img, loc.title);
             });
+            markers.addLayer(marker);
         });
+
+        map.addLayer(markers);
 
         // --- 4. VIEWER LOGIC ---
         var viewer;
@@ -240,8 +310,9 @@
                     "type": "equirectangular",
                     "panorama": imagePath,
                     "autoLoad": true,
-                    "autoRotate":5,
-                    "showFullscreen": false
+                    "autoRotate": 5,
+                    "showFullscreen": false,
+                    "compass": false
                 });
             }, 50);
         }
