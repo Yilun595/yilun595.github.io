@@ -36,6 +36,54 @@ author_profile: true
 
 Check out the [places](../PANOmap/places360.html) my Insta360 and I have been to.
 
+<style>
+    .slide-wrapper {
+        position: relative;
+        min-width: 500px;
+        height: 350px;
+        scroll-snap-align: start;
+    }
+    
+    .slide-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .overlay-box {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 0px;
+        font-family: sans-serif;
+        font-size: 8px;
+        pointer-events: none; 
+    }
+
+    .results-overlay {
+        bottom: 20px;
+        left: 0px;
+        line-height: 1.4;
+    }
+    .results-overlay h4 {
+        margin: 0 0 5px 0;
+        color: rgba(255, 255, 255, 1);
+        font-size: 12px;
+    }
+
+    .credit-overlay {
+        top: 10px;
+        left: 5px;
+        font-size: 10px;
+        font-style: italic;
+        background: transparent !important;
+        padding: 0;
+        text-shadow: 1px 1px 2px rgba(0,0,0, 0.8);
+    }
+</style>
+
 ## I run
 
 <div style="
@@ -46,14 +94,30 @@ Check out the [places](../PANOmap/places360.html) my Insta360 and I have been to
     scroll-snap-type: x mandatory; 
     margin: 0;">
 
-    <img src="/images/Life/20250209.jpg" 
-         style="min-width: 500px; height: 350px; object-fit: cover; scroll-snap-align: start;" 
-         alt="Marathon">
+    <div class="slide-wrapper">
+        <img src="/images/Life/20250209.jpg" alt="Marathon2025">
+        
+        <div class="overlay-box results-overlay">
+            <h4>Hong Kong Marathon 2025</h4>
+            <strong>Net Time:</strong> 04:34:55<br>
+        </div>
+        
+        <div class="overlay-box credit-overlay">
+            cr. Shuang Liu
+        </div>
+    </div>
+    
+    <div class="slide-wrapper">
+        <img src="/images/Life/20260118.jpg" alt="Marathon2026">
+        
+        <div class="overlay-box results-overlay">
+            <h4>Hong Kong Marathon 2026</h4>
+            <strong>Net Time:</strong> 03:46:55<br>
+        </div>
+
+    </div>
 
 </div>
-<p style="text-align: center; font-size: small;"></p>
-
-cr. Shuang Liu
 
 ## My plant specimen
 
