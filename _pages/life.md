@@ -119,6 +119,8 @@ Check out the [places](../PANOmap/places360.html) my Insta360 and I have been to
 
 </div>
 
+Find me on [Strava](https://strava.app.link/xoFAk9Hf40b).
+
 ## My plant specimen
 
 <div style="
@@ -136,7 +138,7 @@ Check out the [places](../PANOmap/places360.html) my Insta360 and I have been to
 </div>
 <p style="text-align: center; font-size: small;"></p>
 
-Check out the species I encountered on my [PPBC](https://www.ppbc.cn/54764/user) page.
+Check out the species I encountered on my [PPBC](https://ppbc.iplant.cn/54764/user) page.
 
 ## I play a little guitar on the side
 
