@@ -56,27 +56,31 @@ This collection of studies are review studies that are aimed at linking research
 </div>
 
 <script>
-    // Fetch the single JSON file containing all the citation counts
-    fetch('https://yilun595.github.io/citations.json')
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json();
-    })
-    .then(data => {
-        // Loop through all the papers in the JSON data
-        for (const [paperId, info] of Object.entries(data)) {
-            // Find the matching HTML element based on the ID
-            const element = document.getElementById(`cite-${paperId}`);
-            
-            // If the element exists on the page, inject the link and count
-            if (element) {
-                element.innerHTML = `<a href="${info.url}" target="_blank" style="text-decoration: none; color: blue;">${info.count}</a>`;
+    // Wait until the HTML is fully loaded before running the script
+    document.addEventListener("DOMContentLoaded", function() {
+        
+        fetch('/citations.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
             }
-        }
-    })
-    .catch(error => console.error('Error loading citation counts:', error));
+            return response.json();
+        })
+        .then(data => {
+            // Loop through all the papers in the JSON data
+            for (const [paperId, info] of Object.entries(data)) {
+                // Find the matching HTML element based on the ID
+                const element = document.getElementById(`cite-${paperId}`);
+                
+                // If the element exists on the page, inject the link and count
+                if (element) {
+                    element.innerHTML = `<a href="${info.url}" target="_blank" style="text-decoration: none; color: blue;">${info.count}</a>`;
+                }
+            }
+        })
+        .catch(error => console.error('Error loading citation counts:', error));
+        
+    });
 </script>
 
 
