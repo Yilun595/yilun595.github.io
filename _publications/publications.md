@@ -22,7 +22,7 @@ This collection of studies includes research articles focusing on the interactio
 
 [4]  Li, Y., Fan, S., Li, K., Zhang, Y., & Dong, L.* (2021). [Microclimate in an urban park and its influencing factors: A case study of Tiantan Park in Beijing, China](/publication/UECO2021). <i>Urban Ecosystems</i>, 24(4), 767–778. https://doi.org/10.1007/s11252-020-01073-4 `Cited by` <a href="{{ site.data.citations.UECO2021.url }}" target="_blank" style="text-decoration: none; color: blue;">{{ site.data.citations.UECO2021.count }}</a>
 
-[5]  Li, Y.#, Fan, S.#, Li, K., Ke, K., & Dong, L.* (2023). [Contributions of urban green and blue spaces on local-scale climate in the core area of Beijing, China](/publication/UECO2023). <i>Urban Ecosystems</i>. https://doi.org/10.1007/s11252-023-01405-0 | `Cited by` <a href="{{ site.data.citations.UECO2023.url }}" target="_blank" style="text-decoration: none; color: blue;">{{ site.data.citations.UECO2023.count }}</a>
+[5]  Li, Y.#, Fan, S.#, Li, K., Ke, K., & Dong, L.* (2023). [Contributions of urban green and blue spaces on local-scale climate in the core area of Beijing, China](/publication/UECO2023). <i>Urban Ecosystems</i>. https://doi.org/10.1007/s11252-023-01405-0 `Cited by` <a href="{{ site.data.citations.UECO2023.url }}" target="_blank" style="text-decoration: none; color: blue;">{{ site.data.citations.UECO2023.count }}</a>
 
 Reviews for linking research and practice
 ----
