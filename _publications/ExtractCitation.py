@@ -48,5 +48,6 @@ for paper_id, doi in papers.items():
         output[paper_id] = {"count": "N/A", "url": "#"}
 
 # 4. Save all results into the single JSON file
-with open('citations.json', 'w') as f:
+os.makedirs('_data', exist_ok=True)
+with open('_data/citations.json', 'w') as f:
     json.dump(output, f)
