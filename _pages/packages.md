@@ -12,7 +12,7 @@ author_profile: true
 
 This repository assists in calculating view factors from fisheye images. It offers an alternative to using the Rayman software. Currently, it contains three functions, supporting calculating SVF following `Rayman algorithm` and the algorithm by `Johnson and Watson (1984)`.
 
-<a href="https://svf-calculator.streamlit.app" target="_blank" style="background-color: #EEEEEE; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: bold;">
+<a href="https://svf-calculator.streamlit.app" target="_blank" style="background-color: #EEEEEE; color: #333333; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: bold; border: 1px solid #d1d5da; display: inline-block;">
     Open Live Calculator
 </a>
 
