@@ -18,7 +18,7 @@ This repository assists in calculating view factors from fisheye images. It offe
 
 This implementation was first used in [this publication](/publication/BAE2025), calculating SVF profile from panoramic videos.
 
-<b>[02]</b>  [PhenoMap](https://phenomap.cpelab.net/)
+<b>[02]</b>  [PhenoMap: A teaching tool to generate a pheno-calendar with students](https://phenomap.cpelab.net/)
 ----
 
 <img src="/images/PhenoMap.jpg" alt="PhenoMap" style="width: 700px; height: auto; border: 1px solid grey;"/>
@@ -26,3 +26,5 @@ This implementation was first used in [this publication](/publication/BAE2025), 
 PhenoMap is an educational web app for recording plant phenophases in the field — photos, locations, and repeat visits over time — and building a personal pheno-calendar. It is designed for planting-design courses to help students learn plants through observation, and is cross-platform: installable on iOS, Android, and PC.
 
 This tool grew out of my [undergraduate research project](/research/2017-Phenology) on phenological changes of landscape plants in Beijing.
+
+[Reach out to me](mailto:yilun595@connect.hku.hk) if you want to use it in your teaching!
