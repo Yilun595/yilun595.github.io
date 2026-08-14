@@ -21,7 +21,7 @@ This implementation was first used in [this publication](/publication/BAE2025), 
 <b>[02]</b>  [PhenoMap: A teaching tool to generate a pheno-calendar with students](https://phenomap.cpelab.net/)
 ----
 
-<img src="/images/PhenoMap.jpg" alt="PhenoMap" style="width: 700px; height: auto; border: 1px solid grey;"/>
+<img src="/images/PhenoMap-02.png" alt="PhenoMap" style="width: 700px; height: auto;"/>
 
 PhenoMap is an educational web app for recording plant phenophases in the field — photos, locations, and repeat visits over time — and building a personal pheno-calendar. It is designed for planting-design courses to help students learn plants through observation, and is cross-platform: installable on iOS, Android, and PC.
 
