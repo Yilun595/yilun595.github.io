@@ -22,7 +22,6 @@ PhD thesis, <i>The University of Hong Kong</i>, 2025.
         width: 100%;
         max-width: 700px;
         aspect-ratio: 700 / 230;
-        margin: 0 auto;
     }
     </style>
 </head>
