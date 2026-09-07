@@ -60,3 +60,7 @@ Refer to this [conference paper (in Chinese)](https://kns.cnki.net/kcms/detail/d
 Funding information
 ----
 This project is funded by `增彩延绿植物配置优秀案例调查研究(CEG-2015-01-4)`, `2016年北京园林绿化增彩延绿植物资源收集、快繁与应用技术研究(CEG-2016)`, and `北京林业大学大学生科研训练计划(X201610022012)`.
+
+Platform
+----
+To facilitate phenology observation, a web app named [PhenoMap](https://phenomap.cpelab.net/info) has been developed for educational purposes. Reach out to me if you'd like it tailored for your planting design / plant observation courses.
