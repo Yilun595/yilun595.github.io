@@ -55,6 +55,6 @@ Urban heat island has long been documented, as well as the significant cooling e
 
 Undergraduate thesis, <i>Beijing Forestry University</i>, 2017.
 
-<img src="/images/PhenoMap.jpg" alt="icon" style="width: 700px; height: auto; border: 1px solid grey;"/>
+<img src="/images/PhenoMap-02.png" alt="icon" style="width: 700px; height: auto; border: 1px solid grey;"/>
 
 Phenological changes of vegetation bring diversity to the urban landscape, especially in temperate regions. By taking Beijing as a study case, this research project evaluated the phenological changes of landscape plants at both individual and plant community level. Results obtained were expected to aid selection of plant species in planting design.
