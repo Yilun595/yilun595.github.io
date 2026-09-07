@@ -19,8 +19,10 @@ PhD thesis, <i>The University of Hong Kong</i>, 2025.
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
     <style>
     #panorama {
-        width: 700px;
-        height: 230px;
+        width: 100%;
+        max-width: 700px;
+        aspect-ratio: 700 / 230;
+        margin: 0 auto;
     }
     </style>
 </head>
