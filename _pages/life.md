@@ -124,7 +124,7 @@ Find me on [Strava](https://strava.app.link/xoFAk9Hf40b).
 02-12-2023 / 10K / 00:54:49 / 00:52:49 / Hong Kong<br>
 01-21-2024 / Half Marathon / 01:51:59 / 01:50:31 / Hong Kong<br>
 02-09-2025 / Marathon / 04:40:25 / 04:34:55 / Hong Kong<br>
-01-18-2024 / Marathon / 03:51:05 / 03:46:55 / Hong Kong
+01-18-2026 / Marathon / 03:51:05 / 03:46:55 / Hong Kong
 
 ## My plant specimen
 
