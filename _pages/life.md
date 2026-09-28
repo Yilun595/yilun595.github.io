@@ -8,7 +8,8 @@ author_profile: true
 ## I'm on my way to see the sunset
 
 <div style="
-    width: 500px; 
+    width: 100%;
+    max-width: 500px;
     height: 370px; 
     display: flex; 
     overflow-x: auto; 
@@ -16,19 +17,19 @@ author_profile: true
     margin: 0;">
 
     <img src="/images/Life/20251208.jpg" 
-         style="min-width: 500px; height: 350px; object-fit: cover; scroll-snap-align: start;" 
+         style="min-width: 100%; height: 350px; object-fit: cover; scroll-snap-align: start;" 
          alt="Tree Top Walk">
 
     <img src="/images/Life/20231112.jpg" 
-         style="min-width: 500px; height: 350px; object-fit: cover; scroll-snap-align: start;" 
+         style="min-width: 100%; height: 350px; object-fit: cover; scroll-snap-align: start;" 
          alt="Po Pin Chau">
 
     <img src="/images/Life/20231021.jpg" 
-         style="min-width: 500px; height: 350px; object-fit: cover; scroll-snap-align: start;" 
+         style="min-width: 100%; height: 350px; object-fit: cover; scroll-snap-align: start;" 
          alt="Lantau">
 
     <img src="/images/Life/HighWest.jpg" 
-         style="min-width: 500px; height: 350px; object-fit: cover; scroll-snap-align: start;" 
+         style="min-width: 100%; height: 350px; object-fit: cover; scroll-snap-align: start;" 
          alt="High West">
 
 </div>
@@ -39,7 +40,7 @@ Check out the [places](../PANOmap/places360.html) my Insta360 and I have been to
 <style>
     .slide-wrapper {
         position: relative;
-        min-width: 500px;
+        min-width: 100%;
         height: 350px;
         scroll-snap-align: start;
     }
@@ -87,7 +88,8 @@ Check out the [places](../PANOmap/places360.html) my Insta360 and I have been to
 ## I run
 
 <div style="
-    width: 500px; 
+    width: 100%;
+    max-width: 500px;
     height: 370px; 
     display: flex; 
     overflow-x: auto; 
@@ -129,7 +131,8 @@ Find me on [Strava](https://strava.app.link/xoFAk9Hf40b).
 ## My plant specimen
 
 <div style="
-    width: 500px; 
+    width: 100%;
+    max-width: 500px;
     height: 370px; 
     display: flex; 
     overflow-x: auto; 
@@ -137,7 +140,7 @@ Find me on [Strava](https://strava.app.link/xoFAk9Hf40b).
     margin: 0;">
 
     <img src="/images/Life/Specimen.jpg" 
-         style="min-width: 500px; height: 350px; object-fit: cover; scroll-snap-align: start;" 
+         style="min-width: 100%; height: 350px; object-fit: cover; scroll-snap-align: start;" 
          alt="specimen">
 
 </div>
@@ -154,7 +157,7 @@ Check out the species I encountered on my [PPBC](https://ppbc.iplant.cn/54764/us
     frameborder="no" 
     framespacing="0" 
     allowfullscreen="true"
-    style="width: 496px; height: 279px;">
+    style="width: 100%; max-width: 496px; aspect-ratio: 496 / 279; height: auto;">
 </iframe>
 
 In case you are looking for chords of [Hush's](https://yilun595.github.io/GuitarChords/GuitarChord_Hush.pdf) songs.
