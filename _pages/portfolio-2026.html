@@ -9,7 +9,7 @@ robots: "noindex, nofollow"
 
 {% include base_path %}
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/web/pdf_viewer.css">
+<link rel="stylesheet" href="{{ base_path }}/assets/pdfjs/pdf_viewer.css">
 
 <style>
   .pf-wrap { max-width: 1600px; margin: 0 auto; padding: 0 1em 1em; }
@@ -19,7 +19,7 @@ robots: "noindex, nofollow"
   .pf-toolbar .pf-sep { width: 1px; height: 1.4em; background: #ddd; margin: 0 0.4em; }
   .pf-stage { position: relative; height: calc(100vh - 160px); min-height: 400px; background: #e8e8e8; border-radius: 4px; }
   .pf-stage #pf-viewer-container { position: absolute; inset: 0; overflow: auto; }
-  .pf-stage .pdfViewer .page { box-shadow: 0 1px 4px rgba(0,0,0,0.2); }
+  .pf-stage .pdfViewer .page { float: none; padding-left: 0; padding-right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.2); }
   .pf-status { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #666; font-family: sans-serif; pointer-events: none; }
   .pf-stage, .pf-stage * { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
   @media print { body { display: none !important; } }
@@ -36,7 +36,7 @@ robots: "noindex, nofollow"
     <button type="button" id="pf-zoom-in" aria-label="Zoom in">+</button>
   </div>
   <div class="pf-stage">
-    <div id="pf-viewer-container" data-pdf="{{ base_path }}/files/YilunLi_Portfolio_2026.pdf">
+    <div id="pf-viewer-container" data-pdf="{{ base_path }}/files/YilunLi_Portfolio_2026.pdf" data-pdfjs="{{ base_path }}/assets/pdfjs">
       <div id="pf-viewer" class="pdfViewer"></div>
     </div>
     <div class="pf-status" id="pf-status">Loading portfolio&hellip;</div>

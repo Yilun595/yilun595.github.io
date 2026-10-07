@@ -1,12 +1,13 @@
 // View-only PDF viewer for /portfolio/2026/ (PDF.js viewer component, no download/print UI)
-const PDFJS = "https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38";
-
-const pdfjsLib = await import(`${PDFJS}/build/pdf.min.mjs`);
-globalThis.pdfjsLib = pdfjsLib;
-pdfjsLib.GlobalWorkerOptions.workerSrc = `${PDFJS}/build/pdf.worker.min.mjs`;
-const { EventBus, PDFLinkService, PDFViewer, SpreadMode } = await import(`${PDFJS}/web/pdf_viewer.mjs`);
-
+// PDF.js 4.10.38 is self-hosted under /assets/pdfjs/ so it doesn't depend on a CDN
 const container = document.getElementById("pf-viewer-container");
+const PDFJS = container.dataset.pdfjs;
+
+const pdfjsLib = await import(`${PDFJS}/pdf.min.js`);
+globalThis.pdfjsLib = pdfjsLib;
+pdfjsLib.GlobalWorkerOptions.workerSrc = `${PDFJS}/pdf.worker.min.js`;
+const { EventBus, PDFLinkService, PDFViewer, SpreadMode } = await import(`${PDFJS}/pdf_viewer.js`);
+
 const status = document.getElementById("pf-status");
 const pageLabel = document.getElementById("pf-page");
 const narrow = () => window.matchMedia("(max-width: 800px)").matches;
@@ -76,7 +77,13 @@ window.addEventListener("resize", () => {
 });
 
 try {
-  const pdf = await pdfjsLib.getDocument({ url: container.dataset.pdf }).promise;
+  const task = pdfjsLib.getDocument({ url: container.dataset.pdf });
+  task.onProgress = ({ loaded, total }) => {
+    if (status.isConnected && total) {
+      status.textContent = `Loading portfolio… ${Math.round((100 * loaded) / total)}%`;
+    }
+  };
+  const pdf = await task.promise;
   viewer.setDocument(pdf);
   linkService.setDocument(pdf);
 } catch (err) {
