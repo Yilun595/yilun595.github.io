@@ -22,6 +22,10 @@ robots: "noindex, nofollow"
   .pf-stage .pdfViewer .page { float: none; padding-left: 0; padding-right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.2); }
   .pf-status { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #666; font-family: sans-serif; pointer-events: none; }
   .pf-stage, .pf-stage * { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+  .pf-wrap:fullscreen { max-width: none; width: 100%; height: 100%; padding: 0 1em 1em; background: #fff; display: flex; flex-direction: column; box-sizing: border-box; }
+  .pf-wrap:fullscreen .pf-stage { flex: 1; height: auto; }
+  .pf-wrap:-webkit-full-screen { max-width: none; width: 100%; height: 100%; padding: 0 1em 1em; background: #fff; display: flex; flex-direction: column; box-sizing: border-box; }
+  .pf-wrap:-webkit-full-screen .pf-stage { flex: 1; height: auto; }
   @media print { body { display: none !important; } }
 </style>
 
@@ -34,6 +38,8 @@ robots: "noindex, nofollow"
     <button type="button" id="pf-zoom-out" aria-label="Zoom out">&minus;</button>
     <button type="button" id="pf-fit" aria-label="Fit to window">Fit</button>
     <button type="button" id="pf-zoom-in" aria-label="Zoom in">+</button>
+    <span class="pf-sep" id="pf-fs-sep" hidden></span>
+    <button type="button" id="pf-fullscreen" aria-label="Full screen" hidden>&#x26F6; Full screen</button>
   </div>
   <div class="pf-stage">
     <div id="pf-viewer-container" data-pdf="{{ base_path }}/files/YilunLi_Portfolio_2026.pdf" data-pdfjs="{{ base_path }}/assets/pdfjs">

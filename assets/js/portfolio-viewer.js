@@ -67,6 +67,28 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "ArrowLeft" || e.key === "PageUp") { step(-1); e.preventDefault(); }
 });
 
+// Full screen on the toolbar + viewer; hidden where unsupported (e.g. iPhone Safari)
+const wrap = document.querySelector(".pf-wrap");
+const fsButton = document.getElementById("pf-fullscreen");
+const fsElement = () => document.fullscreenElement || document.webkitFullscreenElement;
+if (document.fullscreenEnabled || document.webkitFullscreenEnabled) {
+  fsButton.hidden = false;
+  document.getElementById("pf-fs-sep").hidden = false;
+  fsButton.addEventListener("click", () => {
+    if (fsElement()) {
+      (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+    } else {
+      (wrap.requestFullscreen || wrap.webkitRequestFullscreen).call(wrap);
+    }
+  });
+  const onFsChange = () => {
+    fsButton.innerHTML = fsElement() ? "&#x2715; Exit full screen" : "&#x26F6; Full screen";
+    setTimeout(fit, 100); // wait for the new size to settle
+  };
+  document.addEventListener("fullscreenchange", onFsChange);
+  document.addEventListener("webkitfullscreenchange", onFsChange);
+}
+
 // Refit only when switching between phone and desktop layouts, so mobile scroll/zoom isn't reset
 let wasNarrow = narrow();
 window.addEventListener("resize", () => {
