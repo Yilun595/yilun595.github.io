@@ -1,0 +1,46 @@
+---
+layout: default
+title: "Portfolio 2026"
+permalink: /portfolio/2026/
+author_profile: false
+sitemap: false
+robots: "noindex, nofollow"
+---
+
+{% include base_path %}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/web/pdf_viewer.css">
+
+<style>
+  .pf-wrap { max-width: 1600px; margin: 0 auto; padding: 0 1em 1em; }
+  .pf-toolbar { display: flex; align-items: center; justify-content: center; gap: 0.5em; padding: 0.6em 0; font-family: sans-serif; font-size: 0.85em; }
+  .pf-toolbar button { border: 1px solid #ccc; background: #fff; border-radius: 4px; padding: 0.25em 0.7em; cursor: pointer; font-size: 1em; }
+  .pf-toolbar button:hover { background: #f2f2f2; }
+  .pf-toolbar .pf-sep { width: 1px; height: 1.4em; background: #ddd; margin: 0 0.4em; }
+  .pf-stage { position: relative; height: calc(100vh - 160px); min-height: 400px; background: #e8e8e8; border-radius: 4px; }
+  .pf-stage #pf-viewer-container { position: absolute; inset: 0; overflow: auto; }
+  .pf-stage .pdfViewer .page { box-shadow: 0 1px 4px rgba(0,0,0,0.2); }
+  .pf-status { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #666; font-family: sans-serif; pointer-events: none; }
+  .pf-stage, .pf-stage * { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+  @media print { body { display: none !important; } }
+</style>
+
+<div class="pf-wrap">
+  <div class="pf-toolbar">
+    <button type="button" id="pf-prev" aria-label="Previous page">&#8592;</button>
+    <span id="pf-page">&ndash; / &ndash;</span>
+    <button type="button" id="pf-next" aria-label="Next page">&#8594;</button>
+    <span class="pf-sep"></span>
+    <button type="button" id="pf-zoom-out" aria-label="Zoom out">&minus;</button>
+    <button type="button" id="pf-fit" aria-label="Fit to window">Fit</button>
+    <button type="button" id="pf-zoom-in" aria-label="Zoom in">+</button>
+  </div>
+  <div class="pf-stage">
+    <div id="pf-viewer-container" data-pdf="{{ base_path }}/files/YilunLi_Portfolio_2026.pdf">
+      <div id="pf-viewer" class="pdfViewer"></div>
+    </div>
+    <div class="pf-status" id="pf-status">Loading portfolio&hellip;</div>
+  </div>
+</div>
+
+<script type="module" src="{{ base_path }}/assets/js/portfolio-viewer.js"></script>
