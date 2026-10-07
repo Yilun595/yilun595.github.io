@@ -5,11 +5,10 @@ permalink: /portfolio/2026/
 author_profile: false
 sitemap: false
 robots: "noindex, nofollow"
+pages: 24
 ---
 
 {% include base_path %}
-
-<link rel="stylesheet" href="{{ base_path }}/assets/pdfjs/pdf_viewer.css">
 
 <style>
   .pf-wrap { max-width: 1600px; margin: 0 auto; padding: 0 1em 1em; }
@@ -18,14 +17,17 @@ robots: "noindex, nofollow"
   .pf-toolbar button:hover { background: #f2f2f2; }
   .pf-toolbar .pf-sep { width: 1px; height: 1.4em; background: #ddd; margin: 0 0.4em; }
   .pf-stage { position: relative; height: calc(100vh - 160px); min-height: 400px; background: #e8e8e8; border-radius: 4px; }
-  .pf-stage #pf-viewer-container { position: absolute; inset: 0; overflow: auto; }
-  .pf-stage .pdfViewer .page { float: none; padding-left: 0; padding-right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.2); }
-  .pf-status { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #666; font-family: sans-serif; pointer-events: none; }
+  #pf-viewer-container { position: absolute; inset: 0; overflow: auto; }
+  #pf-viewer { display: inline-block; min-width: 100%; padding: 12px 0; box-sizing: border-box; }
+  .pf-row { display: flex; justify-content: center; gap: 4px; margin: 0 12px 12px; }
+  .pf-row img { display: block; width: var(--pw, 600px); height: auto; aspect-ratio: 842 / 595; background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,0.2); pointer-events: none; max-width: none; flex-shrink: 0; transition: none; }
   .pf-stage, .pf-stage * { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
   .pf-wrap:fullscreen { max-width: none; width: 100%; height: 100%; padding: 0 1em 1em; background: #fff; display: flex; flex-direction: column; box-sizing: border-box; }
   .pf-wrap:fullscreen .pf-stage { flex: 1; height: auto; }
   .pf-wrap:-webkit-full-screen { max-width: none; width: 100%; height: 100%; padding: 0 1em 1em; background: #fff; display: flex; flex-direction: column; box-sizing: border-box; }
   .pf-wrap:-webkit-full-screen .pf-stage { flex: 1; height: auto; }
+  #pf-page { white-space: nowrap; }
+  @media (max-width: 800px) { .pf-toolbar { gap: 0.3em; } .pf-toolbar .pf-sep { margin: 0 0.1em; } .pf-fs-text { display: none; } }
   @media print { body { display: none !important; } }
 </style>
 
@@ -39,14 +41,13 @@ robots: "noindex, nofollow"
     <button type="button" id="pf-fit" aria-label="Fit to window">Fit</button>
     <button type="button" id="pf-zoom-in" aria-label="Zoom in">+</button>
     <span class="pf-sep" id="pf-fs-sep" hidden></span>
-    <button type="button" id="pf-fullscreen" aria-label="Full screen" hidden>&#x26F6; Full screen</button>
+    <button type="button" id="pf-fullscreen" aria-label="Full screen" hidden>&#x26F6;<span class="pf-fs-text"> Full screen</span></button>
   </div>
   <div class="pf-stage">
-    <div id="pf-viewer-container" data-pdf="{{ base_path }}/files/YilunLi_Portfolio_2026.pdf" data-pdfjs="{{ base_path }}/assets/pdfjs">
-      <div id="pf-viewer" class="pdfViewer"></div>
+    <div id="pf-viewer-container" data-pages="{{ page.pages }}" data-base="{{ base_path }}/images/portfolio-2026/">
+      <div id="pf-viewer"></div>
     </div>
-    <div class="pf-status" id="pf-status">Loading portfolio&hellip;</div>
   </div>
 </div>
 
-<script type="module" src="{{ base_path }}/assets/js/portfolio-viewer.js"></script>
+<script src="{{ base_path }}/assets/js/portfolio-viewer.js"></script>
