@@ -1,0 +1,54 @@
+---
+layout: default
+title: "CV"
+permalink: /CV/
+author_profile: false
+sitemap: false
+robots: "noindex, nofollow"
+---
+
+{% include base_path %}
+
+<link rel="stylesheet" href="{{ base_path }}/assets/pdfjs/pdf_viewer.css">
+
+<style>
+  .cv-wrap { max-width: 1000px; margin: 0 auto; padding: 0 1em 1em; }
+  .cv-toolbar { display: flex; align-items: center; justify-content: center; gap: 0.5em; padding: 0.6em 0; font-family: sans-serif; font-size: 0.85em; }
+  .cv-toolbar button, .cv-toolbar a { border: 1px solid #ccc; background: #fff; border-radius: 4px; padding: 0.25em 0.7em; cursor: pointer; font-size: 1em; color: inherit; text-decoration: none; line-height: inherit; }
+  .cv-toolbar button:hover, .cv-toolbar a:hover { background: #f2f2f2; }
+  .cv-toolbar .cv-sep { width: 1px; height: 1.4em; background: #ddd; margin: 0 0.4em; }
+  .cv-stage { position: relative; height: calc(100vh - 160px); min-height: 400px; background: #e8e8e8; border-radius: 4px; }
+  .cv-stage #cv-viewer-container { position: absolute; inset: 0; overflow: auto; }
+  .cv-stage .pdfViewer .page { box-shadow: 0 1px 4px rgba(0,0,0,0.2); }
+  .cv-status { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #666; font-family: sans-serif; pointer-events: none; }
+  .cv-wrap:fullscreen { max-width: none; width: 100%; height: 100%; padding: 0 1em 1em; background: #fff; display: flex; flex-direction: column; box-sizing: border-box; }
+  .cv-wrap:fullscreen .cv-stage { flex: 1; height: auto; }
+  .cv-wrap:-webkit-full-screen { max-width: none; width: 100%; height: 100%; padding: 0 1em 1em; background: #fff; display: flex; flex-direction: column; box-sizing: border-box; }
+  .cv-wrap:-webkit-full-screen .cv-stage { flex: 1; height: auto; }
+  #cv-page { white-space: nowrap; }
+  @media (max-width: 800px) { .cv-toolbar { gap: 0.3em; } .cv-toolbar .cv-sep { margin: 0 0.1em; } .cv-btn-text { display: none; } }
+</style>
+
+<div class="cv-wrap">
+  <div class="cv-toolbar">
+    <button type="button" id="cv-prev" aria-label="Previous page">&#8592;</button>
+    <span id="cv-page">&ndash; / &ndash;</span>
+    <button type="button" id="cv-next" aria-label="Next page">&#8594;</button>
+    <span class="cv-sep"></span>
+    <button type="button" id="cv-zoom-out" aria-label="Zoom out">&minus;</button>
+    <button type="button" id="cv-fit" aria-label="Fit to width">Fit</button>
+    <button type="button" id="cv-zoom-in" aria-label="Zoom in">+</button>
+    <span class="cv-sep"></span>
+    <a href="{{ base_path }}/files/YilunLi_CV.pdf" download aria-label="Download PDF">&#x2B07;<span class="cv-btn-text"> Download PDF</span></a>
+    <span class="cv-sep" id="cv-fs-sep" hidden></span>
+    <button type="button" id="cv-fullscreen" aria-label="Full screen" hidden>&#x26F6;<span class="cv-btn-text"> Full screen</span></button>
+  </div>
+  <div class="cv-stage">
+    <div id="cv-viewer-container" data-pdf="{{ base_path }}/files/YilunLi_CV.pdf" data-pdfjs="{{ base_path }}/assets/pdfjs">
+      <div id="cv-viewer" class="pdfViewer"></div>
+    </div>
+    <div class="cv-status" id="cv-status">Loading CV&hellip;</div>
+  </div>
+</div>
+
+<script type="module" src="{{ base_path }}/assets/js/cv-viewer.js"></script>

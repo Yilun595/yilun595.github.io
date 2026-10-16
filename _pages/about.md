@@ -12,7 +12,7 @@ With educational backgrounds and practical experiences in landscape architecture
 
 I'm currently working as a postdoctoral research fellow at the `Berkeley Education Alliance for Research in Singapore (BEARS)`, under the supervision of Prof. [Stefano Schiavon](https://ced.berkeley.edu/people/stefano-schiavon). I'm currently working on the [HEATS project](https://www.linkedin.com/pulse/heats-project-stefano-schiavon-mfk5c/).
 
-Check out my [full CV](http://yilun595.github.io/files/YilunLi_CV.pdf).
+Check out my [full CV](/CV/).
 
 ## Work experience
 * Postdoctoral Research Fellow, `Berkeley Education Alliance for Research in Singapore (BEARS)`, 2025-present
